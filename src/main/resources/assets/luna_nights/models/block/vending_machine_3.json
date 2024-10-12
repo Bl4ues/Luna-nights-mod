@@ -1,0 +1,9 @@
+{
+  "parent": "luna_nights:custom/vending3",
+  "textures": {
+    "all": "luna_nights:block/vending_machine_2",
+    "particle": "luna_nights:block/vending_machine_2",
+    "0": "luna_nights:block/vending_machine_1"
+  },
+  "render_type": "cutout"
+}

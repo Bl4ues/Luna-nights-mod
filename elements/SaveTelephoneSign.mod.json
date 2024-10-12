@@ -1,0 +1,222 @@
+{
+  "_fv": 57,
+  "_type": "block",
+  "definition": {
+    "texture": "save_telephone_2",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "telephone2:default",
+    "rotationMode": 1,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 7.2,
+        "my": 0.025,
+        "mz": 12.8,
+        "Mx": 8.8,
+        "My": 15.225,
+        "Mz": 11.2,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 6.925,
+        "mz": 13.1,
+        "Mx": 10.0,
+        "My": 11.225,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.9,
+        "my": 15.525,
+        "mz": 9.2,
+        "Mx": 4.7,
+        "My": 22.125,
+        "Mz": 14.8,
+        "subtract": false
+      },
+      {
+        "mx": 9.7,
+        "my": 20.925,
+        "mz": 13.6,
+        "Mx": 11.1,
+        "My": 16.725,
+        "Mz": 11.1,
+        "subtract": false
+      },
+      {
+        "mx": 12.5,
+        "my": 15.225,
+        "mz": 8.8,
+        "Mx": 3.5,
+        "My": 15.425,
+        "Mz": 15.5,
+        "subtract": false
+      },
+      {
+        "mx": 3.5,
+        "my": 15.425,
+        "mz": 15.5,
+        "Mx": 12.5,
+        "My": 26.225,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 12.5,
+        "my": 26.225,
+        "mz": 15.5,
+        "Mx": 3.5,
+        "My": 25.725,
+        "Mz": 8.8,
+        "subtract": false
+      },
+      {
+        "mx": 3.5,
+        "my": 15.225,
+        "mz": 8.8,
+        "Mx": 3.8,
+        "My": 25.825,
+        "Mz": 15.1,
+        "subtract": false
+      },
+      {
+        "mx": 12.5,
+        "my": 25.825,
+        "mz": 15.1,
+        "Mx": 12.2,
+        "My": 15.425,
+        "Mz": 8.8,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 15.225,
+        "mz": 11.0,
+        "Mx": 7.0,
+        "My": 14.025,
+        "Mz": 13.0,
+        "subtract": false
+      }
+    ],
+    "name": "Telephone Save",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 3.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": true,
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": "CUSTOM:SaveTelephone"
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": true,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "IRON"
+    },
+    "tickRate": 6,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "LIME",
+    "creativePickItem": {
+      "value": "CUSTOM:SaveTelephone"
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "BLOCKED",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "DESTROY",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 2,
+    "isBonemealable": false,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "SavingClick"
+    },
+    "onTickUpdate": {
+      "name": "SaveTelephoneMark2"
+    },
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

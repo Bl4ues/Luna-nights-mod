@@ -1,0 +1,562 @@
+{
+  "mod_elements": [
+    {
+      "name": "TouhouLunaNights",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touhou_luna_nights",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "Icon",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/item/IconItem.java",
+          "src/main/resources/assets/luna_nights/models/item/icon.json"
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "SaveTelephone",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_telephone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/blockstates/save_telephone.json",
+          "src/main/resources/assets/luna_nights/models/item/save_telephone.json",
+          "src/main/java/net/mcreator/lunanights/block/SaveTelephoneBlock.java",
+          "src/main/resources/assets/luna_nights/models/block/save_telephone.json"
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "SaveTelephoneMark",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_telephone_mark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SaveTelephoneMarkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "SaveTelephoneSign",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_telephone_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/blockstates/save_telephone_sign.json",
+          "src/main/resources/assets/luna_nights/models/item/save_telephone_sign.json",
+          "src/main/resources/assets/luna_nights/models/block/save_telephone_sign.json",
+          "src/main/java/net/mcreator/lunanights/block/SaveTelephoneSignBlock.java"
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "SaveTelephoneMark2",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_telephone_mark_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SaveTelephoneMark2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "HP",
+      "type": "overlay",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/HPOverlay.java"
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "SAVE",
+      "type": "overlay",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/SAVEOverlay.java"
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "SavingClick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saving_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SavingClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "SAVEDisplay",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SAVEDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "HPDisplay",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/HPDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMachine1",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/vending_machine_1.json",
+          "src/main/java/net/mcreator/lunanights/block/VendingMachine1Block.java",
+          "src/main/resources/assets/luna_nights/blockstates/vending_machine_1.json",
+          "src/main/resources/assets/luna_nights/models/block/vending_machine_1.json"
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMark",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_mark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/VendingMarkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMachine2",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/vending_machine_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/vending_machine_2.json",
+          "src/main/java/net/mcreator/lunanights/block/VendingMachine2Block.java",
+          "src/main/resources/assets/luna_nights/models/item/vending_machine_2.json"
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMark2",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_mark_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/VendingMark2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "HealingClick",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/HealingClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMachine3",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/VendingMachine3Block.java",
+          "src/main/resources/assets/luna_nights/blockstates/vending_machine_3.json",
+          "src/main/resources/assets/luna_nights/models/item/vending_machine_3.json",
+          "src/main/resources/assets/luna_nights/models/block/vending_machine_3.json"
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMark3",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_mark_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/VendingMark3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMachine1BlockAdded",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_1_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/VendingMachine1BlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "VendingMachine1BlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_1_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/VendingMachine1BlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/VendingMachine"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "tel_save",
+      "files": [
+        "tel_save"
+      ],
+      "category": "block",
+      "subtitle": "Telephone ringing"
+    },
+    {
+      "name": "soda_machine",
+      "files": [
+        "soda_machine"
+      ],
+      "category": "block",
+      "subtitle": "Vending machine"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.tel_save": "Telephone ringing",
+      "item_group.luna_nights.touhou_luna_nights": "Touhou Luna Nights",
+      "block.luna_nights_props.save_telephone_sign": "Telephone Save",
+      "item_group.luna_nights_props.touhou_luna_nights": "Touhou Luna Nights",
+      "item.luna_nights_props.icon": "Icon",
+      "block.luna_nights_props.vending_machine_1": "Vending Machine",
+      "block.luna_nights_props.vending_machine_2": "Vending Machine",
+      "block.luna_nights_props.vending_machine_3": "Vending Machine",
+      "item.luna_nights.icon": "Icon",
+      "gui.luna_nights.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights.save_telephone_sign": "Telephone Save",
+      "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
+      "block.luna_nights.vending_machine_2": "Vending Machine",
+      "block.luna_nights.vending_machine_1": "Vending Machine",
+      "block.luna_nights.save_telephone": "Telephone Save",
+      "block.luna_nights_props.save_telephone": "Telephone Save",
+      "subtitles.soda_machine": "Vending machine",
+      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
+      "block.luna_nights.vending_machine_3": "Vending Machine",
+      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Misc",
+        "children": []
+      },
+      {
+        "name": "SaveTelephone",
+        "children": []
+      },
+      {
+        "name": "VendingMachine",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "luna_nights",
+    "modName": "Touhou Luna Nights",
+    "version": "1.0.0",
+    "author": "Bl4ues",
+    "websiteURL": "https://mcreator.net",
+    "license": "Creative Commons Attribution-ShareAlike 4.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "512x512",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.lunanights",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

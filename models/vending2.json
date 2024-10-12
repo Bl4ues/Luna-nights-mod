@@ -1,0 +1,55 @@
+{
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "vending_machine_2",
+		"particle": "vending_machine_2"
+	},
+	"elements": [
+		{
+			"name": "life",
+			"from": [5.25, 1.55, 12],
+			"to": [10.75, 7, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -25, 0]},
+			"faces": {
+				"north": {"uv": [14.625, 14.6375, 16, 16], "texture": "#0"},
+				"east": {"uv": [13.5625, 14.8875, 12.4375, 16], "texture": "#0"},
+				"south": {"uv": [14.625, 14.6375, 16, 16], "texture": "#0"},
+				"west": {"uv": [13.25, 14.8875, 12.125, 16], "texture": "#0"},
+				"up": {"uv": [12.25, 16, 13.375, 14.875], "texture": "#0"},
+				"down": {"uv": [12.25, 16, 13.375, 14.875], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 115, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 115, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"ground": {
+			"translation": [0, 2.75, 0],
+			"scale": [0.47, 0.47, 0.47]
+		},
+		"gui": {
+			"rotation": [20, -138, 0],
+			"translation": [1.75, -4, 0],
+			"scale": [0.78, 0.78, 0.78]
+		},
+		"head": {
+			"translation": [0, 0, -6.25],
+			"scale": [1.28, 1.28, 1.28]
+		},
+		"fixed": {
+			"translation": [0, -3, -4.5]
+		}
+	}
+}

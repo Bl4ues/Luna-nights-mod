@@ -1,0 +1,9 @@
+{
+  "parent": "luna_nights:custom/telephone2",
+  "textures": {
+    "all": "luna_nights:block/save_telephone_2",
+    "particle": "luna_nights:block/save_telephone_2",
+    "0": "luna_nights:block/save_telephone_2"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "luna_nights:block/save_telephone"
+    },
+    "facing=east": {
+      "model": "luna_nights:block/save_telephone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "luna_nights:block/save_telephone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "luna_nights:block/save_telephone",
+      "y": 270
+    }
+  }
+}

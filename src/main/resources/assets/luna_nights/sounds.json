@@ -1,0 +1,20 @@
+{
+  "tel_save": {
+    "subtitle": "subtitles.tel_save",
+    "sounds": [
+      {
+        "name": "luna_nights:tel_save",
+        "stream": false
+      }
+    ]
+  },
+  "soda_machine": {
+    "subtitle": "subtitles.soda_machine",
+    "sounds": [
+      {
+        "name": "luna_nights:soda_machine",
+        "stream": false
+      }
+    ]
+  }
+}
