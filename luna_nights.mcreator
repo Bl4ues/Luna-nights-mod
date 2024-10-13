@@ -477,6 +477,323 @@
         ]
       },
       "path": "~/VendingMachine"
+    },
+    {
+      "name": "WGA2",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wga_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/WGA2Block.java",
+          "src/main/resources/assets/luna_nights/models/block/wga_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/wga_2.json",
+          "src/main/resources/assets/luna_nights/models/item/wga_2.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGB2",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgb_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/wgb_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgb_2.json",
+          "src/main/java/net/mcreator/lunanights/block/WGB2Block.java",
+          "src/main/resources/assets/luna_nights/models/item/wgb_2.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGA1",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wga_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/WGA1Block.java",
+          "src/main/resources/assets/luna_nights/models/item/wga_1.json",
+          "src/main/resources/assets/luna_nights/blockstates/wga_1.json",
+          "src/main/resources/assets/luna_nights/models/block/wga_1.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGA3",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wga_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/wga_3.json",
+          "src/main/resources/assets/luna_nights/blockstates/wga_3.json",
+          "src/main/resources/assets/luna_nights/models/item/wga_3.json",
+          "src/main/java/net/mcreator/lunanights/block/WGA3Block.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGB1",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgb_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/WGB1Block.java",
+          "src/main/resources/assets/luna_nights/models/block/wgb_1.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgb_1.json",
+          "src/main/resources/assets/luna_nights/models/item/wgb_1.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGB3",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgb_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/blockstates/wgb_3.json",
+          "src/main/resources/assets/luna_nights/models/block/wgb_3.json",
+          "src/main/resources/assets/luna_nights/models/item/wgb_3.json",
+          "src/main/java/net/mcreator/lunanights/block/WGB3Block.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGC1",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgc_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/wgc_1.json",
+          "src/main/java/net/mcreator/lunanights/block/WGC1Block.java",
+          "src/main/resources/assets/luna_nights/blockstates/wgc_1.json",
+          "src/main/resources/assets/luna_nights/models/block/wgc_1.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGC2",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgc_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/wgc_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgc_2.json",
+          "src/main/java/net/mcreator/lunanights/block/WGC2Block.java",
+          "src/main/resources/assets/luna_nights/models/item/wgc_2.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGC3",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgc_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/WGC3Block.java",
+          "src/main/resources/assets/luna_nights/models/block/wgc_3.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgc_3.json",
+          "src/main/resources/assets/luna_nights/models/item/wgc_3.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD1",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/wgd_1.json",
+          "src/main/java/net/mcreator/lunanights/block/WGD1Block.java",
+          "src/main/resources/assets/luna_nights/blockstates/wgd_1.json",
+          "src/main/resources/assets/luna_nights/models/block/wgd_1.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD3",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/block/WGD3Block.java",
+          "src/main/resources/assets/luna_nights/models/block/wgd_3.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgd_3.json",
+          "src/main/resources/assets/luna_nights/models/item/wgd_3.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD2",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/wgd_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgd_2.json",
+          "src/main/resources/assets/luna_nights/models/item/wgd_2.json",
+          "src/main/java/net/mcreator/lunanights/block/WGD2Block.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD2Symbol",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_2_symbol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/wgd_2_symbol.json",
+          "src/main/resources/assets/luna_nights/blockstates/wgd_2_symbol.json",
+          "src/main/java/net/mcreator/lunanights/block/WGD2SymbolBlock.java",
+          "src/main/resources/assets/luna_nights/models/block/wgd_2_symbol.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD2UpdateTick",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_2_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/WGD2UpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGD2UpdateTick2",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wgd_2_update_tick_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/WGD2UpdateTick2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGA2BlockAdded",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wga_2_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/WGA2BlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
     }
   ],
   "variable_elements": [],
@@ -505,21 +822,34 @@
       "block.luna_nights_props.save_telephone_sign": "Telephone Save",
       "item_group.luna_nights_props.touhou_luna_nights": "Touhou Luna Nights",
       "item.luna_nights_props.icon": "Icon",
-      "block.luna_nights_props.vending_machine_1": "Vending Machine",
-      "block.luna_nights_props.vending_machine_2": "Vending Machine",
-      "block.luna_nights_props.vending_machine_3": "Vending Machine",
-      "item.luna_nights.icon": "Icon",
-      "gui.luna_nights.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights.wgd_2_symbol": "Warp Gate",
       "block.luna_nights.save_telephone_sign": "Telephone Save",
       "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "block.luna_nights.vending_machine_1": "Vending Machine",
       "block.luna_nights.save_telephone": "Telephone Save",
-      "block.luna_nights_props.save_telephone": "Telephone Save",
+      "block.luna_nights.wgc_3": "Warp Gate",
+      "block.luna_nights.wgd_2": "Warp Gate",
+      "block.luna_nights.wgd_3": "Warp Gate",
       "subtitles.soda_machine": "Vending machine",
-      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
+      "block.luna_nights.wgb_2": "Warp Gate",
+      "block.luna_nights.wga_3": "Warp Gate",
+      "block.luna_nights.wgc_1": "Warp Gate",
       "block.luna_nights.vending_machine_3": "Vending Machine",
-      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY"
+      "block.luna_nights.wgb_3": "Warp Gate",
+      "block.luna_nights.wgc_2": "Warp Gate",
+      "block.luna_nights.wgd_1": "Warp Gate",
+      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights.wga_1": "Warp Gate",
+      "block.luna_nights.wga_2": "Warp Gate",
+      "block.luna_nights.wgb_1": "Warp Gate",
+      "block.luna_nights_props.vending_machine_1": "Vending Machine",
+      "block.luna_nights_props.vending_machine_2": "Vending Machine",
+      "block.luna_nights_props.vending_machine_3": "Vending Machine",
+      "item.luna_nights.icon": "Icon",
+      "gui.luna_nights.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights_props.save_telephone": "Telephone Save",
+      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE"
     }
   },
   "foldersRoot": {
@@ -535,6 +865,10 @@
       },
       {
         "name": "VendingMachine",
+        "children": []
+      },
+      {
+        "name": "WarpGate",
         "children": []
       }
     ]

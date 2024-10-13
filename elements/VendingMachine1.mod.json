@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "vending",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -58,7 +58,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 6,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,

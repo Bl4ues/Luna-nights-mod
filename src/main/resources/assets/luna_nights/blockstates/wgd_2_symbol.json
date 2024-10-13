@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "luna_nights:block/wgd_2_symbol"
+    },
+    "facing=east": {
+      "model": "luna_nights:block/wgd_2_symbol",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "luna_nights:block/wgd_2_symbol",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "luna_nights:block/wgd_2_symbol",
+      "y": 270
+    }
+  }
+}

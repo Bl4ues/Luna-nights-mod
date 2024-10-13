@@ -20,6 +20,7 @@ public class LunaNightsModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.luna_nights.touhou_luna_nights")).icon(() -> new ItemStack(LunaNightsModItems.ICON.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(LunaNightsModBlocks.SAVE_TELEPHONE.get().asItem());
 				tabData.accept(LunaNightsModBlocks.VENDING_MACHINE_1.get().asItem());
+				tabData.accept(LunaNightsModBlocks.WGA_2.get().asItem());
 			})
 
 					.build());

@@ -1,0 +1,9 @@
+{
+  "parent": "luna_nights:custom/warp_gate_b2",
+  "textures": {
+    "all": "luna_nights:block/warp_portal",
+    "particle": "luna_nights:block/warp_portal",
+    "0": "luna_nights:block/warp_portal"
+  },
+  "render_type": "solid"
+}

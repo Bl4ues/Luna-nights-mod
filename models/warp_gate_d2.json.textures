@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "warp_gate_2"
+      },
+      "name": "default"
+    }
+  }
+}

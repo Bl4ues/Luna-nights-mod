@@ -1,0 +1,9 @@
+{
+  "parent": "luna_nights:custom/warp_gate_d2_symbol",
+  "textures": {
+    "all": "luna_nights:block/warp_gate_1",
+    "particle": "luna_nights:block/warp_gate_1",
+    "0": "luna_nights:block/warp_gate_1"
+  },
+  "render_type": "cutout"
+}

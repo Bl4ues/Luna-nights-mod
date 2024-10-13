@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "save_telephone_1"
+      },
+      "name": "default"
+    }
+  }
+}
