@@ -31,8 +31,10 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.lunanights.init.LunaNightsModTabs;
 import net.mcreator.lunanights.init.LunaNightsModSounds;
+import net.mcreator.lunanights.init.LunaNightsModMenus;
 import net.mcreator.lunanights.init.LunaNightsModItems;
 import net.mcreator.lunanights.init.LunaNightsModBlocks;
+import net.mcreator.lunanights.init.LunaNightsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,11 +55,12 @@ public class LunaNightsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		LunaNightsModSounds.REGISTRY.register(bus);
 		LunaNightsModBlocks.REGISTRY.register(bus);
-
+		LunaNightsModBlockEntities.REGISTRY.register(bus);
 		LunaNightsModItems.REGISTRY.register(bus);
 
 		LunaNightsModTabs.REGISTRY.register(bus);
 
+		LunaNightsModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

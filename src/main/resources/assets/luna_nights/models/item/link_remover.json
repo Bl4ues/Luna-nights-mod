@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "luna_nights:item/barrier_held_je2_be2"
+  }
+}

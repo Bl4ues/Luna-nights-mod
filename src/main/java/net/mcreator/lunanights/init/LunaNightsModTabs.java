@@ -21,6 +21,9 @@ public class LunaNightsModTabs {
 				tabData.accept(LunaNightsModBlocks.SAVE_TELEPHONE.get().asItem());
 				tabData.accept(LunaNightsModBlocks.VENDING_MACHINE_1.get().asItem());
 				tabData.accept(LunaNightsModBlocks.WGA_2.get().asItem());
+				tabData.accept(LunaNightsModItems.LINK_REMOVER.get());
+				tabData.accept(LunaNightsModItems.POCKET_WATCH.get());
+				tabData.accept(LunaNightsModItems.KNIFES.get());
 			})
 
 					.build());

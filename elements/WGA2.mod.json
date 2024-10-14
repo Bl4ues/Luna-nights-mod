@@ -58,7 +58,7 @@
     "material": {
       "value": "WOOD"
     },
-    "tickRate": 0,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -102,13 +102,13 @@
     "unbreakable": true,
     "breakHarvestLevel": 2,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -119,8 +119,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "WGA2OnBlockRightClicked"
+    },
     "onBlockAdded": {
       "name": "WGA2BlockAdded"
+    },
+    "onTickUpdate": {
+      "name": "A2"
     },
     "onBlockPlayedBy": {
       "name": "WGA2BlockAdded"

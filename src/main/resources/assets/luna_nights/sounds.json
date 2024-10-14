@@ -16,5 +16,32 @@
         "stream": false
       }
     ]
+  },
+  "warp": {
+    "subtitle": "subtitles.warp",
+    "sounds": [
+      {
+        "name": "luna_nights:warp",
+        "stream": false
+      }
+    ]
+  },
+  "timestop": {
+    "subtitle": "subtitles.timestop",
+    "sounds": [
+      {
+        "name": "luna_nights:timestop",
+        "stream": false
+      }
+    ]
+  },
+  "timeresumes": {
+    "subtitle": "subtitles.timeresumes",
+    "sounds": [
+      {
+        "name": "luna_nights:timeresumes",
+        "stream": false
+      }
+    ]
   }
 }

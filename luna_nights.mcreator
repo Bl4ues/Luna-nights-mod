@@ -487,6 +487,7 @@
       "registry_name": "wga_2",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/lunanights/block/entity/WGA2BlockEntity.java",
           "src/main/java/net/mcreator/lunanights/block/WGA2Block.java",
           "src/main/resources/assets/luna_nights/models/block/wga_2.json",
           "src/main/resources/assets/luna_nights/blockstates/wga_2.json",
@@ -700,70 +701,6 @@
       "path": "~/WarpGate"
     },
     {
-      "name": "WGD2UpdateTick",
-      "type": "procedure",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wgd_2_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/WGD2UpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/WarpGate"
-    },
-    {
-      "name": "WGD2UpdateTick2",
-      "type": "procedure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wgd_2_update_tick_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/WGD2UpdateTick2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/WarpGate"
-    },
-    {
       "name": "WGA2BlockAdded",
       "type": "procedure",
       "sortid": 36,
@@ -794,9 +731,1923 @@
         ]
       },
       "path": "~/WarpGate"
+    },
+    {
+      "name": "A1",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/A1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "A2",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/A2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "A3",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/A3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "B1",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/B1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "B2",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/B2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "B3",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/B3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "C1",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/C1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "C2",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/C2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "C3",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/C3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "D1",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/D1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "D3",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/D3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "D2nS",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_2n_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/D2nSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "D2",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/D2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/BlockChecking"
+    },
+    {
+      "name": "WarpMenu",
+      "type": "gui",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/network/WarpMenuButtonMessage.java",
+          "src/main/java/net/mcreator/lunanights/world/inventory/WarpMenuMenu.java",
+          "src/main/java/net/mcreator/lunanights/client/gui/WarpMenuScreen.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WarpChoice",
+      "type": "gui",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_choice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/network/WarpChoiceButtonMessage.java",
+          "src/main/java/net/mcreator/lunanights/world/inventory/WarpChoiceMenu.java",
+          "src/main/java/net/mcreator/lunanights/client/gui/WarpChoiceScreen.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "NamedWarp",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "named_warp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/NamedWarpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WGA2OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wga_2_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/WGA2OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "WarpChoiceGUIButtons",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_choice_gui_buttons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/WarpChoiceGUIButtonsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "Button1",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button2",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button3",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button4",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button5",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button6",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button7",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "Button1Logic",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_1_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button1LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button2Logic",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_2_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button2LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button3Logic",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_3_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button3LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button4Logic",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_4_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button4LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button5Logic",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_5_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button5LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button6Logic",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_6_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button6LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Button7Logic",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_7_logic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Button7LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label1Logic",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_1_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label1LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label2Logic",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_2_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label2LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label3Logic",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_3_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label3LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label4Logic",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_4_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label4LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label5Logic",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_5_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label5LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label6Logic",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_6_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label6LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Label7Logic",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "label_7_logic",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/Label7LogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons/Logic"
+    },
+    {
+      "name": "Effects",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/EffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WarpGate/Buttons"
+    },
+    {
+      "name": "LinkRemover",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "link_remover",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/link_remover.json",
+          "src/main/java/net/mcreator/lunanights/item/LinkRemoverItem.java"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "IfWP1",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "IfWP2",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "IfWP3",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "IfWP4",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "IfWP5",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "IfWP6",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_wp_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IfWP6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "WarpOverlay",
+      "type": "overlay",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "warp_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/WarpOverlayOverlay.java"
+        ]
+      },
+      "path": "~/WarpGate/WarpOverlay"
+    },
+    {
+      "name": "PocketWatch",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_watch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/item/PocketWatchItem.java",
+          "src/main/resources/assets/luna_nights/models/item/pocket_watch.json"
+        ]
+      },
+      "path": "~/PocketWatch"
+    },
+    {
+      "name": "ActivateWatch",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activate_watch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ActivateWatchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "TimeStop",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeStopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "ManaStart",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "ManaRegen",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaRegenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "Knifes",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/knifes.json",
+          "src/main/java/net/mcreator/lunanights/item/KnifesItem.java"
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "TimeStart",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "TimeRegen",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeRegenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "KnifesUse",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifes_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/KnifesUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "ManaOverlay",
+      "type": "overlay",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/ManaOverlayOverlay.java"
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "ShowMana",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_mana",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ShowManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "ShowTime",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_time",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ShowTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "ManaDisplay",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "TimeDisplay",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "PocketTimeUsageAndAnimation",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_time_usage_and_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/PocketTimeUsageAndAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Warp1_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp3_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp4_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp5_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp6_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp7_X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp3_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp4_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp5_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp6_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp7_Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp3_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp4_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp5_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp6_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp7_Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp2",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp3",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp4",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp5",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp6",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp7",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp1Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp2Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp3Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp4Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp5Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp6Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "Warp7Name",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "WarpOverlay_1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WarpOverlay_2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WarpOverlay_3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WarpOverlay_4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WarpOverlay_5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WarpOverlay_6",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeStop",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "sitMana",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "ManaStart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MaxMana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "ManaMultiplier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "sitTime",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "TimeStart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MaxTime",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "TimeMultiplier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Time",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "tel_save",
@@ -813,43 +2664,108 @@
       ],
       "category": "block",
       "subtitle": "Vending machine"
+    },
+    {
+      "name": "warp",
+      "files": [
+        "warp"
+      ],
+      "category": "block",
+      "subtitle": "Warping"
+    },
+    {
+      "name": "timestop",
+      "files": [
+        "timestop"
+      ],
+      "category": "block",
+      "subtitle": "Time Stops"
+    },
+    {
+      "name": "timeresumes",
+      "files": [
+        "timeresumes"
+      ],
+      "category": "block",
+      "subtitle": "Time Resumes"
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.tel_save": "Telephone ringing",
-      "item_group.luna_nights.touhou_luna_nights": "Touhou Luna Nights",
-      "block.luna_nights_props.save_telephone_sign": "Telephone Save",
+      "gui.luna_nights.warp_choice.button_button6": "Warp",
+      "gui.luna_nights.warp_choice.button_button7": "Warp",
+      "gui.luna_nights.mana_overlay.label_time1": "",
       "item_group.luna_nights_props.touhou_luna_nights": "Touhou Luna Nights",
+      "gui.luna_nights.mana_overlay.label_mana": "",
+      "gui.luna_nights.warp_choice.label_1": "1",
+      "gui.luna_nights.warp_menu.label_warp_gate": "WARP GATE",
+      "gui.luna_nights.warp_choice.label_3": "3",
+      "gui.luna_nights.warp_choice.label_2": "2",
+      "gui.luna_nights.warp_choice.label_5": "5",
+      "block.luna_nights.save_telephone_sign": "Telephone Save",
+      "gui.luna_nights.warp_choice.label_4": "4",
+      "gui.luna_nights.warp_choice.label_7": "7",
+      "gui.luna_nights.warp_choice.label_6": "6",
+      "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
+      "block.luna_nights.wgd_2": "Warp Gate",
+      "block.luna_nights.wgd_3": "Warp Gate",
+      "gui.luna_nights.warp_choice.button_button1": "Warp",
+      "block.luna_nights.wgb_2": "Warp Gate",
+      "subtitles.soda_machine": "Vending machine",
+      "block.luna_nights.wgb_3": "Warp Gate",
+      "block.luna_nights.wgd_1": "Warp Gate",
+      "gui.luna_nights.warp_choice.button_button61": "Button6",
+      "gui.luna_nights.mana_overlay.label_time": "TIME",
+      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
+      "gui.luna_nights.warp_choice.button_button4": "Warp",
+      "gui.luna_nights.mana_overlay.label_mp": "MP",
+      "block.luna_nights.wgb_1": "Warp Gate",
+      "gui.luna_nights.warp_choice.button_button5": "Warp",
+      "gui.luna_nights.warp_choice.button_button2": "Warp",
+      "gui.luna_nights.warp_choice.button_button21": "Button2",
+      "gui.luna_nights.warp_choice.button_button3": "Warp",
+      "subtitles.timeresumes": "Time Resumes",
+      "subtitles.warp": "Warping",
+      "item.luna_nights.icon": "Icon",
+      "block.luna_nights_props.save_telephone": "Telephone Save",
+      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
+      "gui.luna_nights.warp_choice.button_button71": "Button7",
+      "gui.luna_nights.warp_choice.button_button31": "Button3",
+      "item_group.luna_nights.touhou_luna_nights": "Touhou Luna Nights",
+      "gui.luna_nights.warp_menu.WarpGateName": "Warp Gate Name",
+      "block.luna_nights_props.save_telephone_sign": "Telephone Save",
       "item.luna_nights_props.icon": "Icon",
       "block.luna_nights.wgd_2_symbol": "Warp Gate",
-      "block.luna_nights.save_telephone_sign": "Telephone Save",
-      "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
+      "item.luna_nights.pocket_watch": "Pocket Watch",
+      "item.luna_nights.link_remover": "Warp Gate Disconnector",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "block.luna_nights.vending_machine_1": "Vending Machine",
       "block.luna_nights.save_telephone": "Telephone Save",
       "block.luna_nights.wgc_3": "Warp Gate",
-      "block.luna_nights.wgd_2": "Warp Gate",
-      "block.luna_nights.wgd_3": "Warp Gate",
-      "subtitles.soda_machine": "Vending machine",
-      "block.luna_nights.wgb_2": "Warp Gate",
+      "gui.luna_nights.warp_choice.button_button41": "Button4",
       "block.luna_nights.wga_3": "Warp Gate",
       "block.luna_nights.wgc_1": "Warp Gate",
-      "block.luna_nights.vending_machine_3": "Vending Machine",
-      "block.luna_nights.wgb_3": "Warp Gate",
       "block.luna_nights.wgc_2": "Warp Gate",
-      "block.luna_nights.wgd_1": "Warp Gate",
-      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights.vending_machine_3": "Vending Machine",
       "block.luna_nights.wga_1": "Warp Gate",
       "block.luna_nights.wga_2": "Warp Gate",
-      "block.luna_nights.wgb_1": "Warp Gate",
+      "item.luna_nights.knifes": "Knifes",
+      "gui.luna_nights.warp_choice.Button1": "",
       "block.luna_nights_props.vending_machine_1": "Vending Machine",
+      "gui.luna_nights.warp_choice.Button2": "",
       "block.luna_nights_props.vending_machine_2": "Vending Machine",
+      "gui.luna_nights.warp_choice.Button3": "",
       "block.luna_nights_props.vending_machine_3": "Vending Machine",
-      "item.luna_nights.icon": "Icon",
-      "gui.luna_nights.hp.label_hp_recovery": "HP RECOVERY",
-      "block.luna_nights_props.save_telephone": "Telephone Save",
-      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE"
+      "gui.luna_nights.warp_menu.button_accept": "Accept",
+      "gui.luna_nights.warp_choice.Button4": "",
+      "gui.luna_nights.warp_choice.Button5": "",
+      "gui.luna_nights.warp_choice.Button6": "",
+      "gui.luna_nights.warp_choice.Button7": "",
+      "gui.luna_nights.hp.label_hp_recovery": "MP HP RECOVERY",
+      "subtitles.timestop": "Time Stops",
+      "gui.luna_nights.warp_choice.button_button51": "Button5",
+      "gui.luna_nights.warp_choice.button_button11": "Button1"
     }
   },
   "foldersRoot": {
@@ -869,6 +2785,41 @@
       },
       {
         "name": "WarpGate",
+        "children": [
+          {
+            "name": "BlockChecking",
+            "children": []
+          },
+          {
+            "name": "Buttons",
+            "children": [
+              {
+                "name": "Logic",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "WarpOverlay",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "PocketWatch",
+        "children": [
+          {
+            "name": "PocketAnimation",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Knifes",
+        "children": []
+      },
+      {
+        "name": "ManaAndTime",
         "children": []
       }
     ]
@@ -883,10 +2834,17 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "512x512",
-    "requiredMods": [],
+    "requiredMods": [
+      "geckolib_plugin",
+      "player_animator"
+    ],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib",
+      "playeranimator"
+    ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.lunanights",

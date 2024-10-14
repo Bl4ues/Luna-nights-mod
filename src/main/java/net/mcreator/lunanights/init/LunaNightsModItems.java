@@ -12,6 +12,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.lunanights.item.PocketWatchItem;
+import net.mcreator.lunanights.item.LinkRemoverItem;
+import net.mcreator.lunanights.item.KnifesItem;
 import net.mcreator.lunanights.item.IconItem;
 import net.mcreator.lunanights.LunaNightsMod;
 
@@ -36,6 +39,9 @@ public class LunaNightsModItems {
 	public static final RegistryObject<Item> WGD_3 = block(LunaNightsModBlocks.WGD_3);
 	public static final RegistryObject<Item> WGD_2 = block(LunaNightsModBlocks.WGD_2);
 	public static final RegistryObject<Item> WGD_2_SYMBOL = block(LunaNightsModBlocks.WGD_2_SYMBOL);
+	public static final RegistryObject<Item> LINK_REMOVER = REGISTRY.register("link_remover", () -> new LinkRemoverItem());
+	public static final RegistryObject<Item> POCKET_WATCH = REGISTRY.register("pocket_watch", () -> new PocketWatchItem());
+	public static final RegistryObject<Item> KNIFES = REGISTRY.register("knifes", () -> new KnifesItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

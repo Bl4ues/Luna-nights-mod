@@ -1,0 +1,7 @@
+{
+  "parent": "luna_nights:custom/pocket_watch",
+  "textures": {
+    "0": "luna_nights:block/pocket_watch",
+    "particle": "luna_nights:item/pocket_watch"
+  }
+}

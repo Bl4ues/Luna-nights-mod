@@ -12,6 +12,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.lunanights.network.LunaNightsModVariables;
 import net.mcreator.lunanights.LunaNightsMod;
 
 public class HealingClickProcedure {
@@ -31,6 +32,13 @@ public class HealingClickProcedure {
 				entity.getPersistentData().putBoolean("Healing", true);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 20, 10, false, false));
+				{
+					double _setval = 100;
+					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Mana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				entity.getPersistentData().putBoolean("SHealing", false);
 				LunaNightsMod.queueServerWork(25, () -> {
 					entity.getPersistentData().putBoolean("Healing", false);

@@ -1,0 +1,72 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 127,
+    "height": 71,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_warp_gate",
+          "text": {
+            "fixedValue": "WARP GATE"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 94
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Warp Gate Name",
+          "name": "WarpGateName",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_accept",
+          "text": "Accept",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "NamedWarp"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 216,
+          "y": 131
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "warp_gate.png",
+          "use1Xscale": false,
+          "x": 156,
+          "y": 90
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

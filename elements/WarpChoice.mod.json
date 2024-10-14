@@ -1,0 +1,389 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 163,
+    "height": 183,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button1",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button1"
+          },
+          "displayCondition": {
+            "name": "Button1Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 36
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button2",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button2"
+          },
+          "displayCondition": {
+            "name": "Button2Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button3",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button3"
+          },
+          "displayCondition": {
+            "name": "Button3Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button4",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button4"
+          },
+          "displayCondition": {
+            "name": "Button4Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 111
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button5",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button5"
+          },
+          "displayCondition": {
+            "name": "Button5Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 136
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button6",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button6"
+          },
+          "displayCondition": {
+            "name": "Button6Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_button7",
+          "text": "Warp",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Button7"
+          },
+          "displayCondition": {
+            "name": "Button7Logic"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 226,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_1",
+          "text": {
+            "fixedValue": "",
+            "name": "Label1Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button1Logic"
+          },
+          "x": 141,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Label2Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button2Logic"
+          },
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_3",
+          "text": {
+            "fixedValue": "",
+            "name": "Label3Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button3Logic"
+          },
+          "x": 141,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_4",
+          "text": {
+            "fixedValue": "",
+            "name": "Label4Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button4Logic"
+          },
+          "x": 141,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_5",
+          "text": {
+            "fixedValue": "",
+            "name": "Label5Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button5Logic"
+          },
+          "x": 141,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_6",
+          "text": {
+            "fixedValue": "",
+            "name": "Label6Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button6Logic"
+          },
+          "x": 141,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_label_7",
+          "text": {
+            "fixedValue": "",
+            "name": "Label7Logic"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Button7Logic"
+          },
+          "x": 141,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1",
+          "text": {
+            "fixedValue": "1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_2",
+          "text": {
+            "fixedValue": "2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_3",
+          "text": {
+            "fixedValue": "3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_4",
+          "text": {
+            "fixedValue": "4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_5",
+          "text": {
+            "fixedValue": "5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_6",
+          "text": {
+            "fixedValue": "6"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_7",
+          "text": {
+            "fixedValue": "7"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 186
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "WarpChoiceGUIButtons"
+    },
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 10,
+      "oy": 10,
+      "snapOnGrid": true
+    }
+  }
+}

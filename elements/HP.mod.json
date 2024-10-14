@@ -9,14 +9,14 @@
         "data": {
           "name": "label_hp_recovery",
           "text": {
-            "fixedValue": "HP RECOVERY"
+            "fixedValue": "MP HP RECOVERY"
           },
           "color": {
             "value": -52429,
             "falpha": 0.0
           },
           "anchorPoint": "CENTER",
-          "x": 185,
+          "x": 177,
           "y": 40
         }
       }

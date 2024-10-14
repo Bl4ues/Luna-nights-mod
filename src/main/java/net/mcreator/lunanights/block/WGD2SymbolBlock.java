@@ -26,7 +26,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.lunanights.procedures.WGD2UpdateTick2Procedure;
+import net.mcreator.lunanights.procedures.D2nSProcedure;
 
 import java.util.List;
 
@@ -118,7 +118,7 @@ public class WGD2SymbolBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		WGD2UpdateTick2Procedure.execute(world, x, y, z);
+		D2nSProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 6);
 	}
 }

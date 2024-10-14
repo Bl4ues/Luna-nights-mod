@@ -17,4 +17,7 @@ public class LunaNightsModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, LunaNightsMod.MODID);
 	public static final RegistryObject<SoundEvent> TEL_SAVE = REGISTRY.register("tel_save", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "tel_save")));
 	public static final RegistryObject<SoundEvent> SODA_MACHINE = REGISTRY.register("soda_machine", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "soda_machine")));
+	public static final RegistryObject<SoundEvent> WARP = REGISTRY.register("warp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "warp")));
+	public static final RegistryObject<SoundEvent> TIMESTOP = REGISTRY.register("timestop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "timestop")));
+	public static final RegistryObject<SoundEvent> TIMERESUMES = REGISTRY.register("timeresumes", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "timeresumes")));
 }

@@ -379,7 +379,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -399,7 +399,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "WGD2UpdateTick2"
+      "name": "D2nS"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

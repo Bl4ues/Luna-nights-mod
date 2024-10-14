@@ -34,7 +34,7 @@ public class HPOverlay {
 			z = entity.getZ();
 		}
 		if (HPDisplayProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.luna_nights.hp.label_hp_recovery"), w / 2 + -28, h / 2 + -80, -52429, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.luna_nights.hp.label_hp_recovery"), w / 2 + -36, h / 2 + -80, -52429, false);
 		}
 	}
 }
