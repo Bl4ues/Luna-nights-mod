@@ -21,16 +21,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.lunanights.network.LunaNightsModVariables;
 import net.mcreator.lunanights.init.LunaNightsModItems;
-
-import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
-import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
-import dev.kosmx.playerAnim.api.layered.ModifierLayer;
-import dev.kosmx.playerAnim.api.layered.KeyframeAnimationPlayer;
-import dev.kosmx.playerAnim.api.layered.IAnimation;
 
 public class TimeStopProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -46,14 +39,6 @@ public class TimeStopProcedure {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timestop")), SoundSource.BLOCKS, 2, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timestop")), SoundSource.BLOCKS, 2, 1, false);
-					}
-				}
-				if (world.isClientSide()) {
-					if (entity instanceof AbstractClientPlayer player) {
-						var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
-						if (animation != null && !animation.isActive()) {
-							animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "pocket.model.timestop"))));
-						}
 					}
 				}
 			} else {
@@ -100,9 +85,9 @@ public class TimeStopProcedure {
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timeresumes")), SoundSource.BLOCKS, 2, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timeresumes")), SoundSource.NEUTRAL, 2, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timeresumes")), SoundSource.BLOCKS, 2, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timeresumes")), SoundSource.NEUTRAL, 2, 1, false);
 				}
 			}
 			TimeShader2Procedure.execute(world, entity);

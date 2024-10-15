@@ -88,6 +88,12 @@ public class LunaNightsModVariables {
 			clone.MaxTime = original.MaxTime;
 			clone.TimeMultiplier = original.TimeMultiplier;
 			clone.Time = original.Time;
+			clone.AquamarineCount = original.AquamarineCount;
+			clone.TopazCount = original.TopazCount;
+			clone.RubyCount = original.RubyCount;
+			clone.SapphireCount = original.SapphireCount;
+			clone.EmeraldCount = original.EmeraldCount;
+			clone.WalkOnWater = original.WalkOnWater;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -382,6 +388,12 @@ public class LunaNightsModVariables {
 		public double MaxTime = 100.0;
 		public double TimeMultiplier = 0.0;
 		public double Time = 100.0;
+		public double AquamarineCount = 0.0;
+		public double TopazCount = 0.0;
+		public double RubyCount = 0.0;
+		public double SapphireCount = 0.0;
+		public double EmeraldCount = 0.0;
+		public boolean WalkOnWater = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -404,6 +416,12 @@ public class LunaNightsModVariables {
 			nbt.putDouble("MaxTime", MaxTime);
 			nbt.putDouble("TimeMultiplier", TimeMultiplier);
 			nbt.putDouble("Time", Time);
+			nbt.putDouble("AquamarineCount", AquamarineCount);
+			nbt.putDouble("TopazCount", TopazCount);
+			nbt.putDouble("RubyCount", RubyCount);
+			nbt.putDouble("SapphireCount", SapphireCount);
+			nbt.putDouble("EmeraldCount", EmeraldCount);
+			nbt.putBoolean("WalkOnWater", WalkOnWater);
 			return nbt;
 		}
 
@@ -423,6 +441,12 @@ public class LunaNightsModVariables {
 			MaxTime = nbt.getDouble("MaxTime");
 			TimeMultiplier = nbt.getDouble("TimeMultiplier");
 			Time = nbt.getDouble("Time");
+			AquamarineCount = nbt.getDouble("AquamarineCount");
+			TopazCount = nbt.getDouble("TopazCount");
+			RubyCount = nbt.getDouble("RubyCount");
+			SapphireCount = nbt.getDouble("SapphireCount");
+			EmeraldCount = nbt.getDouble("EmeraldCount");
+			WalkOnWater = nbt.getBoolean("WalkOnWater");
 		}
 	}
 
@@ -461,6 +485,12 @@ public class LunaNightsModVariables {
 					variables.MaxTime = message.data.MaxTime;
 					variables.TimeMultiplier = message.data.TimeMultiplier;
 					variables.Time = message.data.Time;
+					variables.AquamarineCount = message.data.AquamarineCount;
+					variables.TopazCount = message.data.TopazCount;
+					variables.RubyCount = message.data.RubyCount;
+					variables.SapphireCount = message.data.SapphireCount;
+					variables.EmeraldCount = message.data.EmeraldCount;
+					variables.WalkOnWater = message.data.WalkOnWater;
 				}
 			});
 			context.setPacketHandled(true);

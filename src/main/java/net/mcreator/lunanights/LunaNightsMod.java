@@ -33,6 +33,7 @@ import net.mcreator.lunanights.init.LunaNightsModTabs;
 import net.mcreator.lunanights.init.LunaNightsModSounds;
 import net.mcreator.lunanights.init.LunaNightsModMenus;
 import net.mcreator.lunanights.init.LunaNightsModItems;
+import net.mcreator.lunanights.init.LunaNightsModEntities;
 import net.mcreator.lunanights.init.LunaNightsModBlocks;
 import net.mcreator.lunanights.init.LunaNightsModBlockEntities;
 
@@ -57,6 +58,7 @@ public class LunaNightsMod {
 		LunaNightsModBlocks.REGISTRY.register(bus);
 		LunaNightsModBlockEntities.REGISTRY.register(bus);
 		LunaNightsModItems.REGISTRY.register(bus);
+		LunaNightsModEntities.REGISTRY.register(bus);
 
 		LunaNightsModTabs.REGISTRY.register(bus);
 

@@ -1,0 +1,58 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "mana",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Mana Card",
+    "rarity": "UNCOMMON",
+    "creativeTab": {
+      "value": "CUSTOM:TouhouLunaNights"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 1,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "Increases MP when consumed"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "ManaCardConsume"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

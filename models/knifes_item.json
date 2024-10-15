@@ -1,0 +1,191 @@
+{
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "knifes_item",
+		"particle": "knifes_item"
+	},
+	"elements": [
+		{
+			"name": "guard",
+			"from": [9.90589, 14.22584, 7.5],
+			"to": [10.80589, 15.22584, 9],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [0.8125, 10, 0, 9], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 7.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.875, 0, 9, 1], "texture": "#0"},
+				"west": {"uv": [2, 6, 3, 7.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 6, 8.875, 7.5], "texture": "#0"},
+				"down": {"uv": [7, 0, 7.875, 1.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [10.15589, 15.22584, 7.75],
+			"to": [10.55589, 19.22584, 8.75],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [4.375, 10, 4, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6.375, 6, 6, 10], "texture": "#0"},
+				"west": {"uv": [5, 4, 9, 5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9, 2, 9.375, 3], "texture": "#0"},
+				"down": {"uv": [2, 9, 2.375, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "blade",
+			"from": [10.35589, 8.22584, 7.75],
+			"to": [10.35589, 14.22584, 8.75],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [5, 5.5, 8.4375, 2], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [6, 0, 0, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 5.5, 3.4375, 9], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 7.9375, 5.5], "texture": "#0"},
+				"down": {"uv": [4, 4.5, 7.4375, 5.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "guard",
+			"from": [7.5, 13.25, 7.5],
+			"to": [8.4, 14.25, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [0.8125, 10, 0, 9], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 7.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.875, 0, 9, 1], "texture": "#0"},
+				"west": {"uv": [2, 6, 3, 7.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 6, 8.875, 7.5], "texture": "#0"},
+				"down": {"uv": [7, 0, 7.875, 1.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [7.75, 14.25, 7.75],
+			"to": [8.15, 18.25, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [4.375, 10, 4, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6.375, 6, 6, 10], "texture": "#0"},
+				"west": {"uv": [5, 4, 9, 5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9, 2, 9.375, 3], "texture": "#0"},
+				"down": {"uv": [2, 9, 2.375, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "blade",
+			"from": [7.95, 7.25, 7.75],
+			"to": [7.95, 13.25, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [5, 5.5, 8.4375, 2], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [6, 0, 0, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 5.5, 3.4375, 9], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 7.9375, 5.5], "texture": "#0"},
+				"down": {"uv": [4, 4.5, 7.4375, 5.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "guard",
+			"from": [5.19411, 14.22584, 7.5],
+			"to": [6.09411, 15.22584, 9],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 13.25, 8.5]},
+			"faces": {
+				"north": {"uv": [0.8125, 10, 0, 9], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 7.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.875, 0, 9, 1], "texture": "#0"},
+				"west": {"uv": [2, 6, 3, 7.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 6, 8.875, 7.5], "texture": "#0"},
+				"down": {"uv": [7, 0, 7.875, 1.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [5.44411, 15.22584, 7.75],
+			"to": [5.84411, 19.22584, 8.75],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [4.375, 10, 4, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6.375, 6, 6, 10], "texture": "#0"},
+				"west": {"uv": [5, 4, 9, 5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [9, 2, 9.375, 3], "texture": "#0"},
+				"down": {"uv": [2, 9, 2.375, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "blade",
+			"from": [5.64411, 8.22584, 7.75],
+			"to": [5.64411, 14.22584, 8.75],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 13.25, 8]},
+			"faces": {
+				"north": {"uv": [5, 5.5, 8.4375, 2], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [6, 0, 0, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 5.5, 3.4375, 9], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 7.9375, 5.5], "texture": "#0"},
+				"down": {"uv": [4, 4.5, 7.4375, 5.5], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-85, 0, 0],
+			"translation": [0, -2.75, 3.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-85, 0, 0],
+			"translation": [0, -2.75, 3.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [-32, 15, 0],
+			"translation": [1, -0.25, 4.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-32, 15, 0],
+			"translation": [1, -0.25, 4.25]
+		},
+		"gui": {
+			"rotation": [-50, 28, 28],
+			"translation": [6.5, -8.75, 0],
+			"scale": [2.25, 2.25, 2.25]
+		},
+		"head": {
+			"translation": [0, 3.25, -3.25]
+		},
+		"fixed": {
+			"translation": [-0.25, -4.5, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "knifes",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "knife",
+					"origin": [8, 21, -9],
+					"color": 0,
+					"children": [0, 1, 2]
+				},
+				{
+					"name": "knife",
+					"origin": [8, 21, -9],
+					"color": 0,
+					"children": [3, 4, 5]
+				},
+				{
+					"name": "knife",
+					"origin": [8, 21, -9],
+					"color": 0,
+					"children": [6, 7, 8]
+				}
+			]
+		}
+	]
+}

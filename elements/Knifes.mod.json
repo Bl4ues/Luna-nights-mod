@@ -2,9 +2,9 @@
   "_fv": 57,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "barrier_held_je2_be2",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "knifes_item",
+    "customModelName": "knifes_item:default",
     "customProperties": {},
     "states": [],
     "name": "Knifes",
@@ -27,7 +27,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A storm of knives, deadly when time itself is on your side"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -41,7 +43,7 @@
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
-      "value": "Arrow"
+      "value": "CUSTOM:KnifesProjectile"
     },
     "isFood": false,
     "nutritionalValue": 4,

@@ -23,6 +23,7 @@ public class KnifesItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("A storm of knives, deadly when time itself is on your side"));
 	}
 
 	@Override

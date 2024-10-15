@@ -1,0 +1,7 @@
+{
+  "parent": "luna_nights:custom/knifes_projectile",
+  "textures": {
+    "0": "luna_nights:block/knifes_item",
+    "particle": "luna_nights:item/knifes_item"
+  }
+}

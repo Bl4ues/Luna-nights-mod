@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "luna_nights:custom/knifes_item",
   "textures": {
-    "layer0": "luna_nights:item/barrier_held_je2_be2"
+    "0": "luna_nights:block/knifes_item",
+    "particle": "luna_nights:item/knifes_item"
   }
 }

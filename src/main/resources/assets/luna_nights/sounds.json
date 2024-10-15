@@ -43,5 +43,23 @@
         "stream": false
       }
     ]
+  },
+  "knife_hit": {
+    "subtitle": "subtitles.knife_hit",
+    "sounds": [
+      {
+        "name": "luna_nights:knifehit",
+        "stream": false
+      }
+    ]
+  },
+  "throw_knife": {
+    "subtitle": "subtitles.throw_knife",
+    "sounds": [
+      {
+        "name": "luna_nights:throwknife",
+        "stream": false
+      }
+    ]
   }
 }

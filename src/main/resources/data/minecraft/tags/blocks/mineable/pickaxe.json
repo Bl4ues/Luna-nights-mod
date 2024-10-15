@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "luna_nights:save_telephone",
-    "luna_nights:save_telephone_sign",
     "luna_nights:vending_machine_1",
+    "luna_nights:save_telephone_sign",
     "luna_nights:vending_machine_2",
     "luna_nights:vending_machine_3"
   ]

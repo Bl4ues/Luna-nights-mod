@@ -27,9 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "This watch doesn't tell the time, it commands it."
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

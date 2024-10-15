@@ -20,4 +20,6 @@ public class LunaNightsModSounds {
 	public static final RegistryObject<SoundEvent> WARP = REGISTRY.register("warp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "warp")));
 	public static final RegistryObject<SoundEvent> TIMESTOP = REGISTRY.register("timestop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "timestop")));
 	public static final RegistryObject<SoundEvent> TIMERESUMES = REGISTRY.register("timeresumes", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "timeresumes")));
+	public static final RegistryObject<SoundEvent> KNIFE_HIT = REGISTRY.register("knife_hit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "knife_hit")));
+	public static final RegistryObject<SoundEvent> THROW_KNIFE = REGISTRY.register("throw_knife", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "throw_knife")));
 }
