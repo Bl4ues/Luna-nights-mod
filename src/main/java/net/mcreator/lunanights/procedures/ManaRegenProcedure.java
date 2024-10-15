@@ -33,7 +33,7 @@ public class ManaRegenProcedure {
 				.orElse(new LunaNightsModVariables.PlayerVariables())).MaxMana) {
 			LunaNightsMod.queueServerWork(1, () -> {
 				{
-					double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Mana + 1;
+					double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Mana + 0.1;
 					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.Mana = _setval;
 						capability.syncPlayerVariables(entity);

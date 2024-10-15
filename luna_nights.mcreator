@@ -2045,6 +2045,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2060,13 +2072,22 @@
       "locked_code": false,
       "registry_name": "time_stop",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/TimeStopProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -2326,10 +2347,85 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "TimeShader1",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_shader_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeShader1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "TimeShader2",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_shader_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeShader2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
       },
       "path": "~/PocketWatch/PocketAnimation"
     }
@@ -2694,8 +2790,8 @@
     "en_us": {
       "subtitles.tel_save": "Telephone ringing",
       "gui.luna_nights.warp_choice.button_button6": "Warp",
-      "gui.luna_nights.warp_choice.button_button7": "Warp",
       "gui.luna_nights.mana_overlay.label_time1": "",
+      "gui.luna_nights.warp_choice.button_button7": "Warp",
       "item_group.luna_nights_props.touhou_luna_nights": "Touhou Luna Nights",
       "gui.luna_nights.mana_overlay.label_mana": "",
       "gui.luna_nights.warp_choice.label_1": "1",
@@ -2703,8 +2799,8 @@
       "gui.luna_nights.warp_choice.label_3": "3",
       "gui.luna_nights.warp_choice.label_2": "2",
       "gui.luna_nights.warp_choice.label_5": "5",
-      "block.luna_nights.save_telephone_sign": "Telephone Save",
       "gui.luna_nights.warp_choice.label_4": "4",
+      "block.luna_nights.save_telephone_sign": "Telephone Save",
       "gui.luna_nights.warp_choice.label_7": "7",
       "gui.luna_nights.warp_choice.label_6": "6",
       "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
@@ -2835,13 +2931,15 @@
     "serverSideOnly": false,
     "modPicture": "512x512",
     "requiredMods": [
-      "geckolib_plugin",
-      "player_animator"
+      "geckolib",
+      "playeranimator"
     ],
-    "dependencies": [],
+    "dependencies": [
+      "geckolib",
+      "playeranimator"
+    ],
     "dependants": [],
     "mcreatorDependencies": [
-      "use_compiled_mods",
       "geckolib",
       "playeranimator"
     ],

@@ -20,24 +20,18 @@ authors="Bl4ues"
 
 
 [[dependencies.luna_nights]]
-    modId="geckolib_plugin"
+    modId="geckolib"
     mandatory=true
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.luna_nights]]
-    modId="player_animator"
+    modId="playeranimator"
     mandatory=true
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.luna_nights]]
-    modId="use_compiled_mods"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 [[dependencies.luna_nights]]
     modId="geckolib"
     mandatory=false

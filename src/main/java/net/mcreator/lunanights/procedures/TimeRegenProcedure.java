@@ -29,17 +29,19 @@ public class TimeRegenProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time < (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new LunaNightsModVariables.PlayerVariables())).MaxTime) {
-			LunaNightsMod.queueServerWork(1, () -> {
-				{
-					double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time + 1;
-					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.Time = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-			});
+		if (LunaNightsModVariables.MapVariables.get(world).TimeStop == false) {
+			if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time < (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new LunaNightsModVariables.PlayerVariables())).MaxTime) {
+				LunaNightsMod.queueServerWork(1, () -> {
+					{
+						double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time + 0.5;
+						entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.Time = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				});
+			}
 		}
 	}
 }

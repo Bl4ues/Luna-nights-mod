@@ -5,10 +5,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.player.AbstractClientPlayer;
 
@@ -28,15 +33,15 @@ public class PocketTimeUsageAndAnimationProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player);
+			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == LunaNightsModItems.POCKET_WATCH.get()) {
@@ -62,11 +67,34 @@ public class PocketTimeUsageAndAnimationProcedure {
 		}
 		if (LunaNightsModVariables.MapVariables.get(world).TimeStop) {
 			{
-				double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time - 5;
+				double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time - 0.7;
 				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Time = _setval;
 					capability.syncPlayerVariables(entity);
 				});
+			}
+		}
+		if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time <= 1) {
+			LunaNightsModVariables.MapVariables.get(world).TimeStop = false;
+			LunaNightsModVariables.MapVariables.get(world).syncData(world);
+			TimeStopProcedure.execute(world, x, y, z, entity);
+		}
+		if (LunaNightsModVariables.MapVariables.get(world).TimeStop) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LunaNightsModItems.POCKET_WATCH.get())) : false) {
+				if (entity.isInWater() || entity.isUnderWater() || entity.isSwimming()) {
+					entity.setNoGravity(true);
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 999, 128, false, false));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 999, 255, false, false));
+					entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+				} else {
+					entity.setNoGravity(false);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.JUMP);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
+				}
 			}
 		}
 	}
