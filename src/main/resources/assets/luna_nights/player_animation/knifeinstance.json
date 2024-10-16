@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"knifeinstance": {
+			"animation_length": 1.5417,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"vector": [-152.41033, -36.83503, 77.46939]
+					},
+					"position": {
+						"vector": [0, -2, -2]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [-26.72542, 14.43646, 14.52297]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
