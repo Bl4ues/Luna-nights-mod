@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import net.mcreator.lunanights.network.GlidingKeyMessage;
 import net.mcreator.lunanights.network.DoubleJumpMessage;
 import net.mcreator.lunanights.LunaNightsMod;
 
@@ -30,34 +29,20 @@ public class LunaNightsModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				LunaNightsMod.PACKET_HANDLER.sendToServer(new DoubleJumpMessage(0, 0));
 				DoubleJumpMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping GLIDING_KEY = new KeyMapping("key.luna_nights.gliding_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.movement") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				LunaNightsMod.PACKET_HANDLER.sendToServer(new GlidingKeyMessage(0, 0));
-				GlidingKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-				GLIDING_KEY_LASTPRESS = System.currentTimeMillis();
+				DOUBLE_JUMP_LASTPRESS = System.currentTimeMillis();
 			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - GLIDING_KEY_LASTPRESS);
-				LunaNightsMod.PACKET_HANDLER.sendToServer(new GlidingKeyMessage(1, dt));
-				GlidingKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+				int dt = (int) (System.currentTimeMillis() - DOUBLE_JUMP_LASTPRESS);
+				LunaNightsMod.PACKET_HANDLER.sendToServer(new DoubleJumpMessage(1, dt));
+				DoubleJumpMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
-	private static long GLIDING_KEY_LASTPRESS = 0;
+	private static long DOUBLE_JUMP_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP);
-		event.register(GLIDING_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -66,7 +51,6 @@ public class LunaNightsModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				DOUBLE_JUMP.consumeClick();
-				GLIDING_KEY.consumeClick();
 			}
 		}
 	}

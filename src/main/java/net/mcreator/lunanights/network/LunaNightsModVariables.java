@@ -96,6 +96,8 @@ public class LunaNightsModVariables {
 			clone.WalkOnWater = original.WalkOnWater;
 			if (!event.isWasDeath()) {
 				clone.JumpVar = original.JumpVar;
+				clone.GlideVar = original.GlideVar;
+				clone.DoubleJumping = original.DoubleJumping;
 			}
 		}
 
@@ -195,7 +197,6 @@ public class LunaNightsModVariables {
 		public boolean TimeStop = false;
 		public boolean sitMana = false;
 		public boolean sitTime = false;
-		public boolean GlideVar = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -242,7 +243,6 @@ public class LunaNightsModVariables {
 			TimeStop = nbt.getBoolean("TimeStop");
 			sitMana = nbt.getBoolean("sitMana");
 			sitTime = nbt.getBoolean("sitTime");
-			GlideVar = nbt.getBoolean("GlideVar");
 		}
 
 		@Override
@@ -285,7 +285,6 @@ public class LunaNightsModVariables {
 			nbt.putBoolean("TimeStop", TimeStop);
 			nbt.putBoolean("sitMana", sitMana);
 			nbt.putBoolean("sitTime", sitTime);
-			nbt.putBoolean("GlideVar", GlideVar);
 			return nbt;
 		}
 
@@ -399,6 +398,8 @@ public class LunaNightsModVariables {
 		public double EmeraldCount = 0.0;
 		public boolean WalkOnWater = false;
 		public boolean JumpVar = false;
+		public boolean GlideVar = false;
+		public boolean DoubleJumping = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -428,6 +429,8 @@ public class LunaNightsModVariables {
 			nbt.putDouble("EmeraldCount", EmeraldCount);
 			nbt.putBoolean("WalkOnWater", WalkOnWater);
 			nbt.putBoolean("JumpVar", JumpVar);
+			nbt.putBoolean("GlideVar", GlideVar);
+			nbt.putBoolean("DoubleJumping", DoubleJumping);
 			return nbt;
 		}
 
@@ -454,6 +457,8 @@ public class LunaNightsModVariables {
 			EmeraldCount = nbt.getDouble("EmeraldCount");
 			WalkOnWater = nbt.getBoolean("WalkOnWater");
 			JumpVar = nbt.getBoolean("JumpVar");
+			GlideVar = nbt.getBoolean("GlideVar");
+			DoubleJumping = nbt.getBoolean("DoubleJumping");
 		}
 	}
 
@@ -499,6 +504,8 @@ public class LunaNightsModVariables {
 					variables.EmeraldCount = message.data.EmeraldCount;
 					variables.WalkOnWater = message.data.WalkOnWater;
 					variables.JumpVar = message.data.JumpVar;
+					variables.GlideVar = message.data.GlideVar;
+					variables.DoubleJumping = message.data.DoubleJumping;
 				}
 			});
 			context.setPacketHandled(true);

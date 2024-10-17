@@ -3,10 +3,13 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "SPACE",
-    "keyBindingName": "Double Jump",
+    "keyBindingName": "Double Jump/Gliding",
     "keyBindingCategoryKey": "movement",
     "onKeyPressed": {
       "name": "DoubleJumpOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "DoubleJumpOnKeyReleased"
     }
   }
 }

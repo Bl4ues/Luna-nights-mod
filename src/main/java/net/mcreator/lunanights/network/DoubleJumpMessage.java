@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.lunanights.procedures.DoubleJumpOnKeyReleasedProcedure;
 import net.mcreator.lunanights.procedures.DoubleJumpOnKeyPressedProcedure;
 import net.mcreator.lunanights.LunaNightsMod;
 
@@ -53,6 +54,10 @@ public class DoubleJumpMessage {
 		if (type == 0) {
 
 			DoubleJumpOnKeyPressedProcedure.execute(world, x, y, z, entity);
+		}
+		if (type == 1) {
+
+			DoubleJumpOnKeyReleasedProcedure.execute(entity);
 		}
 	}
 

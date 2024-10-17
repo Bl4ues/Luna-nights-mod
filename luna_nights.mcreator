@@ -2687,30 +2687,6 @@
       "path": "~/Knifes"
     },
     {
-      "name": "KnifeInstance",
-      "type": "procedure",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "knife_instance",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/KnifeInstanceProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Knifes"
-    },
-    {
       "name": "TimeStopFunction",
       "type": "procedure",
       "sortid": 121,
@@ -2869,43 +2845,9 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
-        ]
-      },
-      "path": "~/MaidOutfit"
-    },
-    {
-      "name": "GlidingKeyOnKeyPressed",
-      "type": "procedure",
-      "sortid": 132,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gliding_key_on_key_pressed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/GlidingKeyOnKeyPressedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/MaidOutfit"
-    },
-    {
-      "name": "GlidingKey",
-      "type": "keybind",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gliding_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/network/GlidingKeyMessage.java"
         ]
       },
       "path": "~/MaidOutfit"
@@ -2920,26 +2862,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/lunanights/procedures/OutfitBuffsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/MaidOutfit"
-    },
-    {
-      "name": "GlidingLogic",
-      "type": "procedure",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gliding_logic",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/GlidingLogicProcedure.java"
         ],
         "dependencies": [
           {
@@ -3313,7 +3235,13 @@
     {
       "name": "GlideVar",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "DoubleJumping",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -3431,11 +3359,10 @@
       "gui.luna_nights.warp_menu.WarpGateName": "Warp Gate Name",
       "block.luna_nights_props.save_telephone_sign": "Telephone Save",
       "item.luna_nights_props.icon": "Icon",
-      "key.luna_nights.gliding_key": "Gliding",
       "block.luna_nights.wgd_2_symbol": "Warp Gate",
       "item.luna_nights.pocket_watch": "Pocket Watch",
       "item.luna_nights.topaz": "Topaz",
-      "key.luna_nights.double_jump": "Double Jump",
+      "key.luna_nights.double_jump": "Double Jump/Gliding",
       "item.luna_nights.link_remover": "Warp Gate Disconnector",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "block.luna_nights.vending_machine_1": "Vending Machine",

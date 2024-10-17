@@ -2,13 +2,20 @@ package net.mcreator.lunanights.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.player.AbstractClientPlayer;
 
@@ -36,19 +43,96 @@ public class KnifesUseProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (world.isClientSide()) {
-					if (entity instanceof AbstractClientPlayer player) {
-						var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
-						if (animation != null) {
-							animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knife"))));
+				if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.DOWN
+						&& ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+								|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+								|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR)) {
+					if (world.isClientSide()) {
+						if (entity instanceof AbstractClientPlayer player) {
+							var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+							if (animation != null) {
+								animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowup"))));
+							}
+						}
+					}
+					entity.setDeltaMovement(new Vec3(0, 0, 0));
+					entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+				} else {
+					if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.UP
+							&& ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+									|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+									|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR)) {
+						if (world.isClientSide()) {
+							if (entity instanceof AbstractClientPlayer player) {
+								var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+								if (animation != null) {
+									animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowdown"))));
+								}
+							}
+						}
+						entity.setDeltaMovement(new Vec3(0, 0, 0));
+						entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+					} else {
+						if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity))
+								.getDirection()) == Direction.DOWN) {
+							if (world.isClientSide()) {
+								if (entity instanceof AbstractClientPlayer player) {
+									var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+									if (animation != null) {
+										animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowup"))));
+									}
+								}
+							}
+						} else {
+							if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity))
+									.getDirection()) == Direction.UP) {
+								if (world.isClientSide()) {
+									if (entity instanceof AbstractClientPlayer player) {
+										var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+										if (animation != null) {
+											animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowdown"))));
+										}
+									}
+								}
+							} else {
+								if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+										|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+										|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR) {
+									if (world.isClientSide()) {
+										if (entity instanceof AbstractClientPlayer player) {
+											var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+											if (animation != null) {
+												animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowair"))));
+											}
+										}
+									}
+									entity.setDeltaMovement(new Vec3(0, 0, 0));
+									entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+									if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+								} else {
+									if (world.isClientSide()) {
+										if (entity instanceof AbstractClientPlayer player) {
+											var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+											if (animation != null) {
+												animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrow"))));
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:throw_knife")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:throw_knife")), SoundSource.BLOCKS, 2, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:throw_knife")), SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:throw_knife")), SoundSource.BLOCKS, 2, 1, false);
 					}
 				}
 				{
@@ -227,11 +311,88 @@ public class KnifesUseProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (world.isClientSide()) {
-					if (entity instanceof AbstractClientPlayer player) {
-						var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
-						if (animation != null) {
-							animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knife"))));
+				if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.DOWN
+						&& ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+								|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+								|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR)) {
+					if (world.isClientSide()) {
+						if (entity instanceof AbstractClientPlayer player) {
+							var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+							if (animation != null) {
+								animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowup"))));
+							}
+						}
+					}
+					entity.setDeltaMovement(new Vec3(0, 0, 0));
+					entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+				} else {
+					if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.UP
+							&& ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+									|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+									|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR)) {
+						if (world.isClientSide()) {
+							if (entity instanceof AbstractClientPlayer player) {
+								var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+								if (animation != null) {
+									animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowdown"))));
+								}
+							}
+						}
+						entity.setDeltaMovement(new Vec3(0, 0, 0));
+						entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+					} else {
+						if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity))
+								.getDirection()) == Direction.DOWN) {
+							if (world.isClientSide()) {
+								if (entity instanceof AbstractClientPlayer player) {
+									var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+									if (animation != null) {
+										animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowup"))));
+									}
+								}
+							}
+						} else {
+							if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(20)), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, entity))
+									.getDirection()) == Direction.UP) {
+								if (world.isClientSide()) {
+									if (entity instanceof AbstractClientPlayer player) {
+										var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+										if (animation != null) {
+											animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowdown"))));
+										}
+									}
+								}
+							} else {
+								if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.AIR
+										|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.CAVE_AIR
+										|| (world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.VOID_AIR) {
+									if (world.isClientSide()) {
+										if (entity instanceof AbstractClientPlayer player) {
+											var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+											if (animation != null) {
+												animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrowair"))));
+											}
+										}
+									}
+									entity.setDeltaMovement(new Vec3(0, 0, 0));
+									entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+									if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 1, false, false));
+								} else {
+									if (world.isClientSide()) {
+										if (entity instanceof AbstractClientPlayer player) {
+											var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("luna_nights", "player_animation"));
+											if (animation != null) {
+												animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("luna_nights", "knifethrow"))));
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -253,6 +414,7 @@ public class KnifesUseProcedure {
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
 								entityToSpawn.setSilent(true);
+								entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 								return entityToSpawn;
 							}
 						}.getArrow(projectileLevel, entity, 5, 1);
@@ -272,6 +434,7 @@ public class KnifesUseProcedure {
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
 								entityToSpawn.setSilent(true);
+								entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 								return entityToSpawn;
 							}
 						}.getArrow(projectileLevel, entity, 5, 1);
@@ -292,6 +455,7 @@ public class KnifesUseProcedure {
 									entityToSpawn.setBaseDamage(damage);
 									entityToSpawn.setKnockback(knockback);
 									entityToSpawn.setSilent(true);
+									entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 									return entityToSpawn;
 								}
 							}.getArrow(projectileLevel, entity, 5, 1);
@@ -311,6 +475,7 @@ public class KnifesUseProcedure {
 									entityToSpawn.setBaseDamage(damage);
 									entityToSpawn.setKnockback(knockback);
 									entityToSpawn.setSilent(true);
+									entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 									return entityToSpawn;
 								}
 							}.getArrow(projectileLevel, entity, 5, 1);
@@ -331,6 +496,7 @@ public class KnifesUseProcedure {
 										entityToSpawn.setBaseDamage(damage);
 										entityToSpawn.setKnockback(knockback);
 										entityToSpawn.setSilent(true);
+										entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 										return entityToSpawn;
 									}
 								}.getArrow(projectileLevel, entity, 5, 1);
@@ -350,6 +516,7 @@ public class KnifesUseProcedure {
 										entityToSpawn.setBaseDamage(damage);
 										entityToSpawn.setKnockback(knockback);
 										entityToSpawn.setSilent(true);
+										entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 										return entityToSpawn;
 									}
 								}.getArrow(projectileLevel, entity, 5, 1);
@@ -370,6 +537,7 @@ public class KnifesUseProcedure {
 											entityToSpawn.setBaseDamage(damage);
 											entityToSpawn.setKnockback(knockback);
 											entityToSpawn.setSilent(true);
+											entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 											return entityToSpawn;
 										}
 									}.getArrow(projectileLevel, entity, 5, 1);
@@ -389,6 +557,7 @@ public class KnifesUseProcedure {
 											entityToSpawn.setBaseDamage(damage);
 											entityToSpawn.setKnockback(knockback);
 											entityToSpawn.setSilent(true);
+											entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 											return entityToSpawn;
 										}
 									}.getArrow(projectileLevel, entity, 5, 1);
