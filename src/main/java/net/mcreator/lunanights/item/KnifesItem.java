@@ -17,7 +17,7 @@ import java.util.List;
 
 public class KnifesItem extends Item {
 	public KnifesItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

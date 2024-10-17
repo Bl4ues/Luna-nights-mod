@@ -35,7 +35,9 @@
     ],
     "name": "Warp Gate",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A mystical gate that bends distance, taking you where you need to go"
+      ]
     },
     "hardness": 10.0,
     "resistance": 10.0,
@@ -56,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "PORTAL"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -81,7 +83,7 @@
     "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "SCULK"
     },
     "breakSound": {
       "value": ""

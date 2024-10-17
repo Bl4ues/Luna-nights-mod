@@ -95,6 +95,7 @@ public class LunaNightsModVariables {
 			clone.EmeraldCount = original.EmeraldCount;
 			clone.WalkOnWater = original.WalkOnWater;
 			if (!event.isWasDeath()) {
+				clone.JumpVar = original.JumpVar;
 			}
 		}
 
@@ -194,6 +195,7 @@ public class LunaNightsModVariables {
 		public boolean TimeStop = false;
 		public boolean sitMana = false;
 		public boolean sitTime = false;
+		public boolean GlideVar = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -240,6 +242,7 @@ public class LunaNightsModVariables {
 			TimeStop = nbt.getBoolean("TimeStop");
 			sitMana = nbt.getBoolean("sitMana");
 			sitTime = nbt.getBoolean("sitTime");
+			GlideVar = nbt.getBoolean("GlideVar");
 		}
 
 		@Override
@@ -282,6 +285,7 @@ public class LunaNightsModVariables {
 			nbt.putBoolean("TimeStop", TimeStop);
 			nbt.putBoolean("sitMana", sitMana);
 			nbt.putBoolean("sitTime", sitTime);
+			nbt.putBoolean("GlideVar", GlideVar);
 			return nbt;
 		}
 
@@ -394,6 +398,7 @@ public class LunaNightsModVariables {
 		public double SapphireCount = 0.0;
 		public double EmeraldCount = 0.0;
 		public boolean WalkOnWater = false;
+		public boolean JumpVar = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -422,6 +427,7 @@ public class LunaNightsModVariables {
 			nbt.putDouble("SapphireCount", SapphireCount);
 			nbt.putDouble("EmeraldCount", EmeraldCount);
 			nbt.putBoolean("WalkOnWater", WalkOnWater);
+			nbt.putBoolean("JumpVar", JumpVar);
 			return nbt;
 		}
 
@@ -447,6 +453,7 @@ public class LunaNightsModVariables {
 			SapphireCount = nbt.getDouble("SapphireCount");
 			EmeraldCount = nbt.getDouble("EmeraldCount");
 			WalkOnWater = nbt.getBoolean("WalkOnWater");
+			JumpVar = nbt.getBoolean("JumpVar");
 		}
 	}
 
@@ -491,6 +498,7 @@ public class LunaNightsModVariables {
 					variables.SapphireCount = message.data.SapphireCount;
 					variables.EmeraldCount = message.data.EmeraldCount;
 					variables.WalkOnWater = message.data.WalkOnWater;
+					variables.JumpVar = message.data.JumpVar;
 				}
 			});
 			context.setPacketHandled(true);

@@ -2602,86 +2602,6 @@
       "path": "~/Gems"
     },
     {
-      "name": "GemCount",
-      "type": "procedure",
-      "sortid": 112,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gem_count",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/GemCountProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Gems"
-    },
-    {
-      "name": "RubyHPIncrease",
-      "type": "procedure",
-      "sortid": 113,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_hp_increase",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/RubyHPIncreaseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Gems"
-    },
-    {
-      "name": "SapphireAttackIncrease",
-      "type": "procedure",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_attack_increase",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/SapphireAttackIncreaseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Gems"
-    },
-    {
-      "name": "EmeraldHPRegenIncrease",
-      "type": "procedure",
-      "sortid": 115,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "emerald_hp_regen_increase",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/EmeraldHPRegenIncreaseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Gems"
-    },
-    {
       "name": "WalkOnWater",
       "type": "procedure",
       "sortid": 116,
@@ -2807,6 +2727,82 @@
             "type": "entity"
           },
           {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "KnifePickUp",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_pick_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/KnifePickUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "ManaAndTGTickets",
+      "type": "loottable",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_and_tg_tickets",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/luna_nights/loot_tables/chests/mana_and_tg_tickets.json"
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "MaidOutfit",
+      "type": "armor",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maid_outfit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/item/maid_outfit_chestplate.json",
+          "src/main/resources/assets/luna_nights/models/item/maid_outfit_helmet.json",
+          "src/main/resources/assets/luna_nights/models/item/maid_outfit_boots.json",
+          "src/main/resources/assets/luna_nights/models/item/maid_outfit_leggings.json",
+          "src/main/java/net/mcreator/lunanights/item/MaidOutfitItem.java"
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "DoubleJumpOnKeyPressed",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/DoubleJumpOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2824,7 +2820,139 @@
           }
         ]
       },
-      "path": "~/PocketWatch/PocketAnimation"
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "DoubleJump",
+      "type": "keybind",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/network/DoubleJumpMessage.java"
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "OutfitBonus",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outfit_bonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/OutfitBonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "DoubleJumpOnKeyReleased",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/DoubleJumpOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "GlidingKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliding_key_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/GlidingKeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "GlidingKey",
+      "type": "keybind",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliding_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/network/GlidingKeyMessage.java"
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "OutfitBuffs",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outfit_buffs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/OutfitBuffsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "GlidingLogic",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliding_logic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/GlidingLogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
     }
   ],
   "variable_elements": [
@@ -3175,6 +3303,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "JumpVar",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "GlideVar",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3238,6 +3378,7 @@
   "language_map": {
     "en_us": {
       "subtitles.tel_save": "Telephone ringing",
+      "item.luna_nights.maid_outfit_leggings": "Maid Garter Belt",
       "gui.luna_nights.warp_choice.button_button6": "Warp",
       "gui.luna_nights.mana_overlay.label_time1": "",
       "gui.luna_nights.warp_choice.button_button7": "Warp",
@@ -3266,7 +3407,7 @@
       "block.luna_nights.wgb_3": "Warp Gate",
       "block.luna_nights.wgd_1": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button61": "Button6",
-      "gui.luna_nights.mana_overlay.label_time": "TIME",
+      "gui.luna_nights.mana_overlay.label_time": "TG",
       "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
       "gui.luna_nights.warp_choice.button_button4": "Warp",
       "gui.luna_nights.mana_overlay.label_mp": "MP",
@@ -3278,6 +3419,7 @@
       "subtitles.timeresumes": "Time Resumes",
       "subtitles.warp": "Warping",
       "item.luna_nights.mana_ticket": "Mana Card",
+      "item.luna_nights.maid_outfit_boots": "Maid Boots",
       "item.luna_nights.knifes_projectile_model": "Knifes Projectile",
       "item.luna_nights.icon": "Icon",
       "item.luna_nights.aquamarine": "Aquamarine",
@@ -3289,9 +3431,11 @@
       "gui.luna_nights.warp_menu.WarpGateName": "Warp Gate Name",
       "block.luna_nights_props.save_telephone_sign": "Telephone Save",
       "item.luna_nights_props.icon": "Icon",
+      "key.luna_nights.gliding_key": "Gliding",
       "block.luna_nights.wgd_2_symbol": "Warp Gate",
       "item.luna_nights.pocket_watch": "Pocket Watch",
       "item.luna_nights.topaz": "Topaz",
+      "key.luna_nights.double_jump": "Double Jump",
       "item.luna_nights.link_remover": "Warp Gate Disconnector",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "block.luna_nights.vending_machine_1": "Vending Machine",
@@ -3302,8 +3446,10 @@
       "block.luna_nights.wgc_1": "Warp Gate",
       "block.luna_nights.wgc_2": "Warp Gate",
       "block.luna_nights.vending_machine_3": "Vending Machine",
+      "item.luna_nights.maid_outfit_chestplate": "Maid Dress",
       "block.luna_nights.wga_1": "Warp Gate",
       "block.luna_nights.wga_2": "Warp Gate",
+      "item.luna_nights.maid_outfit_helmet": "Maid Headwear",
       "item.luna_nights.emerald_tln": "Emerald",
       "item.luna_nights.knifes": "Knifes",
       "gui.luna_nights.warp_choice.Button1": "",
@@ -3379,6 +3525,10 @@
       },
       {
         "name": "Gems",
+        "children": []
+      },
+      {
+        "name": "MaidOutfit",
         "children": []
       }
     ]

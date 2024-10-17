@@ -31,6 +31,10 @@ public class LunaNightsModTabs {
 				tabData.accept(LunaNightsModItems.RUBY.get());
 				tabData.accept(LunaNightsModItems.SAPPHIRE.get());
 				tabData.accept(LunaNightsModItems.EMERALD_TLN.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_HELMET.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_CHESTPLATE.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_LEGGINGS.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_BOOTS.get());
 			})
 
 					.build());

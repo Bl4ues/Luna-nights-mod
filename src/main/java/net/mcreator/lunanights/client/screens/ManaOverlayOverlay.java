@@ -44,11 +44,11 @@ public class ManaOverlayOverlay {
 			if (ShowTimeProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						TimeDisplayProcedure.execute(entity), w / 2 + -171, h / 2 + 86, -65281, false);
+						TimeDisplayProcedure.execute(entity), w / 2 + -189, h / 2 + 86, -65281, false);
 			if (ShowManaProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-						ManaDisplayProcedure.execute(entity), w / 2 + -171, h / 2 + 104, -13382401, false);
+						ManaDisplayProcedure.execute(entity), w / 2 + -189, h / 2 + 104, -13382401, false);
 		}
 	}
 }

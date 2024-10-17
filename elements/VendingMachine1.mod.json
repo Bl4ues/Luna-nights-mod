@@ -35,7 +35,9 @@
     ],
     "name": "Vending Machine",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A quick stop for health and mana"
+      ]
     },
     "hardness": 3.0,
     "resistance": 10.0,

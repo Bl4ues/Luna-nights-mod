@@ -27,7 +27,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Remove Torii Warp Gate's link from the list"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

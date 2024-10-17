@@ -62,6 +62,7 @@ public class KnifesUseProcedure {
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
 								entityToSpawn.setSilent(true);
+								entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 								return entityToSpawn;
 							}
 						}.getArrow(projectileLevel, entity, 5, 1);
@@ -81,6 +82,7 @@ public class KnifesUseProcedure {
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
 								entityToSpawn.setSilent(true);
+								entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 								return entityToSpawn;
 							}
 						}.getArrow(projectileLevel, entity, 5, 1);
@@ -101,6 +103,7 @@ public class KnifesUseProcedure {
 									entityToSpawn.setBaseDamage(damage);
 									entityToSpawn.setKnockback(knockback);
 									entityToSpawn.setSilent(true);
+									entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 									return entityToSpawn;
 								}
 							}.getArrow(projectileLevel, entity, 5, 1);
@@ -120,6 +123,7 @@ public class KnifesUseProcedure {
 									entityToSpawn.setBaseDamage(damage);
 									entityToSpawn.setKnockback(knockback);
 									entityToSpawn.setSilent(true);
+									entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 									return entityToSpawn;
 								}
 							}.getArrow(projectileLevel, entity, 5, 1);
@@ -140,6 +144,7 @@ public class KnifesUseProcedure {
 										entityToSpawn.setBaseDamage(damage);
 										entityToSpawn.setKnockback(knockback);
 										entityToSpawn.setSilent(true);
+										entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 										return entityToSpawn;
 									}
 								}.getArrow(projectileLevel, entity, 5, 1);
@@ -159,6 +164,7 @@ public class KnifesUseProcedure {
 										entityToSpawn.setBaseDamage(damage);
 										entityToSpawn.setKnockback(knockback);
 										entityToSpawn.setSilent(true);
+										entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 										return entityToSpawn;
 									}
 								}.getArrow(projectileLevel, entity, 5, 1);
@@ -179,6 +185,7 @@ public class KnifesUseProcedure {
 											entityToSpawn.setBaseDamage(damage);
 											entityToSpawn.setKnockback(knockback);
 											entityToSpawn.setSilent(true);
+											entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 											return entityToSpawn;
 										}
 									}.getArrow(projectileLevel, entity, 5, 1);
@@ -198,6 +205,7 @@ public class KnifesUseProcedure {
 											entityToSpawn.setBaseDamage(damage);
 											entityToSpawn.setKnockback(knockback);
 											entityToSpawn.setSilent(true);
+											entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 											return entityToSpawn;
 										}
 									}.getArrow(projectileLevel, entity, 5, 1);

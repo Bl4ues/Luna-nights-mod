@@ -9,7 +9,7 @@
         "data": {
           "name": "label_time",
           "text": {
-            "fixedValue": "TIME"
+            "fixedValue": "TG"
           },
           "color": {
             "value": -6750055,
@@ -58,7 +58,7 @@
             "name": "ShowTime"
           },
           "anchorPoint": "CENTER",
-          "x": 42,
+          "x": 24,
           "y": 206
         }
       },
@@ -78,7 +78,7 @@
             "name": "ShowMana"
           },
           "anchorPoint": "CENTER",
-          "x": 42,
+          "x": 24,
           "y": 224
         }
       }

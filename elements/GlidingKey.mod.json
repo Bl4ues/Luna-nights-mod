@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LSHIFT",
+    "keyBindingName": "Gliding",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "GlidingKeyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "DoubleJumpOnKeyReleased"
+    }
+  }
+}

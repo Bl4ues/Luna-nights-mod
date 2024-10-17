@@ -18,6 +18,7 @@ import net.mcreator.lunanights.item.SapphireItem;
 import net.mcreator.lunanights.item.RubyItem;
 import net.mcreator.lunanights.item.PocketWatchItem;
 import net.mcreator.lunanights.item.ManaTicketItem;
+import net.mcreator.lunanights.item.MaidOutfitItem;
 import net.mcreator.lunanights.item.LinkRemoverItem;
 import net.mcreator.lunanights.item.KnifesProjectileModelItem;
 import net.mcreator.lunanights.item.KnifesItem;
@@ -58,6 +59,10 @@ public class LunaNightsModItems {
 	public static final RegistryObject<Item> SAPPHIRE = REGISTRY.register("sapphire", () -> new SapphireItem());
 	public static final RegistryObject<Item> EMERALD_TLN = REGISTRY.register("emerald_tln", () -> new EmeraldTLNItem());
 	public static final RegistryObject<Item> KNIFES_PROJECTILE_MODEL = REGISTRY.register("knifes_projectile_model", () -> new KnifesProjectileModelItem());
+	public static final RegistryObject<Item> MAID_OUTFIT_HELMET = REGISTRY.register("maid_outfit_helmet", () -> new MaidOutfitItem.Helmet());
+	public static final RegistryObject<Item> MAID_OUTFIT_CHESTPLATE = REGISTRY.register("maid_outfit_chestplate", () -> new MaidOutfitItem.Chestplate());
+	public static final RegistryObject<Item> MAID_OUTFIT_LEGGINGS = REGISTRY.register("maid_outfit_leggings", () -> new MaidOutfitItem.Leggings());
+	public static final RegistryObject<Item> MAID_OUTFIT_BOOTS = REGISTRY.register("maid_outfit_boots", () -> new MaidOutfitItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

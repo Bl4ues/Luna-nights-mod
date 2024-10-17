@@ -116,7 +116,9 @@
     ],
     "name": "Telephone Save",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A lifeline to save your progress"
+      ]
     },
     "hardness": 3.0,
     "resistance": 10.0,
