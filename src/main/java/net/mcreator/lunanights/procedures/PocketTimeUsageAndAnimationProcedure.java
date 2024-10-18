@@ -37,7 +37,7 @@ public class PocketTimeUsageAndAnimationProcedure {
 			return;
 		if (LunaNightsModVariables.MapVariables.get(world).TimeStop) {
 			{
-				double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time - 0.7;
+				double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Time - 0.5;
 				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Time = _setval;
 					capability.syncPlayerVariables(entity);
