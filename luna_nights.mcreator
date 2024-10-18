@@ -2779,18 +2779,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -2827,6 +2815,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2847,6 +2839,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3223,17 +3219,11 @@
     {
       "name": "WalkOnWater",
       "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "JumpVar",
-      "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
     },
     {
-      "name": "GlideVar",
+      "name": "JumpVar",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"

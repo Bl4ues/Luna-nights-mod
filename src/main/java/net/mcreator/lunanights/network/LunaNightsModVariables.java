@@ -93,10 +93,9 @@ public class LunaNightsModVariables {
 			clone.RubyCount = original.RubyCount;
 			clone.SapphireCount = original.SapphireCount;
 			clone.EmeraldCount = original.EmeraldCount;
-			clone.WalkOnWater = original.WalkOnWater;
 			if (!event.isWasDeath()) {
+				clone.WalkOnWater = original.WalkOnWater;
 				clone.JumpVar = original.JumpVar;
-				clone.GlideVar = original.GlideVar;
 				clone.DoubleJumping = original.DoubleJumping;
 			}
 		}
@@ -398,7 +397,6 @@ public class LunaNightsModVariables {
 		public double EmeraldCount = 0.0;
 		public boolean WalkOnWater = false;
 		public boolean JumpVar = false;
-		public boolean GlideVar = false;
 		public boolean DoubleJumping = false;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -429,7 +427,6 @@ public class LunaNightsModVariables {
 			nbt.putDouble("EmeraldCount", EmeraldCount);
 			nbt.putBoolean("WalkOnWater", WalkOnWater);
 			nbt.putBoolean("JumpVar", JumpVar);
-			nbt.putBoolean("GlideVar", GlideVar);
 			nbt.putBoolean("DoubleJumping", DoubleJumping);
 			return nbt;
 		}
@@ -457,7 +454,6 @@ public class LunaNightsModVariables {
 			EmeraldCount = nbt.getDouble("EmeraldCount");
 			WalkOnWater = nbt.getBoolean("WalkOnWater");
 			JumpVar = nbt.getBoolean("JumpVar");
-			GlideVar = nbt.getBoolean("GlideVar");
 			DoubleJumping = nbt.getBoolean("DoubleJumping");
 		}
 	}
@@ -504,7 +500,6 @@ public class LunaNightsModVariables {
 					variables.EmeraldCount = message.data.EmeraldCount;
 					variables.WalkOnWater = message.data.WalkOnWater;
 					variables.JumpVar = message.data.JumpVar;
-					variables.GlideVar = message.data.GlideVar;
 					variables.DoubleJumping = message.data.DoubleJumping;
 				}
 			});
