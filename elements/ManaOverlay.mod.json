@@ -5,41 +5,237 @@
     "priority": "NORMAL",
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_time",
-          "text": {
-            "fixedValue": "TG"
-          },
-          "color": {
-            "value": -6750055,
-            "falpha": 0.0
-          },
+          "image": "clock_overlay.png",
+          "use1Xscale": false,
           "displayCondition": {
             "name": "ShowTime"
           },
-          "anchorPoint": "CENTER",
-          "x": 6,
-          "y": 206
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_mp",
-          "text": {
-            "fixedValue": "MP"
-          },
-          "color": {
-            "value": -16750900,
-            "falpha": 0.0
-          },
+          "image": "clock_16.png",
+          "use1Xscale": false,
           "displayCondition": {
-            "name": "ShowMana"
+            "name": "TimeBar16"
           },
-          "anchorPoint": "CENTER",
-          "x": 6,
-          "y": 224
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar15"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar14"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar13"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar12"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar11"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeBar0"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 62
         }
       },
       {
@@ -51,15 +247,15 @@
             "name": "TimeDisplay"
           },
           "color": {
-            "value": -65281,
+            "value": -1,
             "falpha": 0.0
           },
           "displayCondition": {
             "name": "ShowTime"
           },
-          "anchorPoint": "CENTER",
-          "x": 24,
-          "y": 206
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 99,
+          "y": 194
         }
       },
       {
@@ -71,25 +267,480 @@
             "name": "ManaDisplay"
           },
           "color": {
-            "value": -13382401,
+            "value": -1,
             "falpha": 0.0
           },
           "displayCondition": {
             "name": "ShowMana"
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 31,
+          "y": 208
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_bar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowMana"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
           "x": 24,
-          "y": 224
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar0"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar11"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar12"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar13"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar14"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar15"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar16"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar17"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar18"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar19"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar20"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar21"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar22"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar23"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar24"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar25"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar26"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar27"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar28"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar29"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar30"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mp_overlay.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowMana"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "timemove.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopOverlayFalse"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 92,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopOverlay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 92,
+          "y": 192
         }
       }
     ],
     "baseTexture": "",
     "overlayTarget": "Ingame",
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "sx": 11,
+      "sy": 11,
+      "ox": 12,
+      "oy": 13,
       "snapOnGrid": true
     }
   }

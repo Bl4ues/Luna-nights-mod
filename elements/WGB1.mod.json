@@ -193,7 +193,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:WGA2"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

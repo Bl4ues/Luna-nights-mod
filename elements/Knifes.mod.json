@@ -8,7 +8,7 @@
     "customProperties": {},
     "states": [],
     "name": "Knifes",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:TouhouLunaNights"
     },
@@ -29,7 +29,7 @@
     "specialInformation": {
       "fixedValue": [
         "10 MP",
-        "A storm of knives, deadly when time itself is on your side"
+        "A storm of knives, deadly when time itself is on your side."
       ]
     },
     "glowCondition": {

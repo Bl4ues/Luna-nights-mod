@@ -7,12 +7,12 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Time Gauge Card",
+    "name": "Time Gauge Upgrade",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:TouhouLunaNights"
     },
-    "stackSize": 16,
+    "stackSize": 6,
     "enchantability": 0,
     "useDuration": 1,
     "toolType": 1.0,
@@ -28,7 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Increases the Time Gauge when consumed"
+        "Increases Max TG when used"
       ]
     },
     "glowCondition": {
@@ -37,7 +37,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
+    "onRightClickedInAir": {
       "name": "TimeCardConsume"
     },
     "enableRanged": false,
@@ -45,7 +45,7 @@
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": true,
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.3,
     "eatResultItem": {

@@ -58,14 +58,14 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 6,
+    "tickRate": 3,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "LIME",
+    "colorOnMap": "RED",
     "creativePickItem": {
       "value": ""
     },

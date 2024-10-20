@@ -61,5 +61,32 @@
         "stream": false
       }
     ]
+  },
+  "lvlupsound": {
+    "subtitle": "subtitles.lvlupsound",
+    "sounds": [
+      {
+        "name": "luna_nights:lvlup",
+        "stream": false
+      }
+    ]
+  },
+  "mpmax": {
+    "subtitle": "subtitles.mpmax",
+    "sounds": [
+      {
+        "name": "luna_nights:mpmax",
+        "stream": false
+      }
+    ]
+  },
+  "tgmax": {
+    "subtitle": "subtitles.tgmax",
+    "sounds": [
+      {
+        "name": "luna_nights:tgmax",
+        "stream": false
+      }
+    ]
   }
 }

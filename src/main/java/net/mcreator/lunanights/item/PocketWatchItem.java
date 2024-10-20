@@ -17,12 +17,13 @@ import java.util.List;
 
 public class PocketWatchItem extends Item {
 	public PocketWatchItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("This watch doesn't tell the time, it commands it."));
 	}
 
 	@Override

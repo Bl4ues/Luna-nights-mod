@@ -5,18 +5,12 @@
     "priority": "HIGH",
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_hp_recovery",
-          "text": {
-            "fixedValue": "MP HP RECOVERY"
-          },
-          "color": {
-            "value": -52429,
-            "falpha": 0.0
-          },
+          "image": "mp_hp_recovery.png",
+          "use1Xscale": false,
           "anchorPoint": "CENTER",
-          "x": 177,
+          "x": 153,
           "y": 40
         }
       }

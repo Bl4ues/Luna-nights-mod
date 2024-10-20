@@ -40,6 +40,13 @@ public class HealingClickProcedure {
 					});
 				}
 				entity.getPersistentData().putBoolean("SHealing", false);
+				{
+					boolean _setval = true;
+					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ManaBar_30 = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				LunaNightsMod.queueServerWork(25, () -> {
 					entity.getPersistentData().putBoolean("Healing", false);
 				});

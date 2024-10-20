@@ -8,7 +8,7 @@
     "customProperties": {},
     "states": [],
     "name": "Pocket Watch",
-    "rarity": "RARE",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:TouhouLunaNights"
     },
@@ -27,7 +27,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "This watch doesn't tell the time, it commands it."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

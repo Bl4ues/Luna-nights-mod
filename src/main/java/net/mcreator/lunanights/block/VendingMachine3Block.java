@@ -47,7 +47,7 @@ public class VendingMachine3Block extends Block implements SimpleWaterloggedBloc
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public VendingMachine3Block() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.METAL).strength(3f, 10f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.METAL).strength(3f, 10f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -131,7 +131,7 @@ public class VendingMachine3Block extends Block implements SimpleWaterloggedBloc
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 6);
+		world.scheduleTick(pos, this, 3);
 	}
 
 	@Override
@@ -141,6 +141,6 @@ public class VendingMachine3Block extends Block implements SimpleWaterloggedBloc
 		int y = pos.getY();
 		int z = pos.getZ();
 		VendingMark3Procedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 6);
+		world.scheduleTick(pos, this, 3);
 	}
 }

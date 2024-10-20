@@ -337,7 +337,7 @@
     "material": {
       "value": "WOOD"
     },
-    "tickRate": 6,
+    "tickRate": 3,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -346,7 +346,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:WGA2"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

@@ -17,14 +17,14 @@ import java.util.List;
 
 public class KnifesItem extends Item {
 	public KnifesItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.RARE));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("10 MP"));
-		list.add(Component.literal("A storm of knives, deadly when time itself is on your side"));
+		list.add(Component.literal("A storm of knives, deadly when time itself is on your side."));
 	}
 
 	@Override

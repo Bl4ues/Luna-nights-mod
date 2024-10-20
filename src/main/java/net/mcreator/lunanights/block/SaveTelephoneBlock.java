@@ -145,7 +145,7 @@ public class SaveTelephoneBlock extends Block implements SimpleWaterloggedBlock 
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 6);
+		world.scheduleTick(pos, this, 3);
 	}
 
 	@Override
@@ -155,7 +155,7 @@ public class SaveTelephoneBlock extends Block implements SimpleWaterloggedBlock 
 		int y = pos.getY();
 		int z = pos.getZ();
 		SaveTelephoneMarkProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 6);
+		world.scheduleTick(pos, this, 3);
 	}
 
 	@Override

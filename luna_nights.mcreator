@@ -2871,6 +2871,1478 @@
         ]
       },
       "path": "~/MaidOutfit"
+    },
+    {
+      "name": "LvLupVoice",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_lup_voice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/LvLupVoiceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "MPmaxVoice",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_pmax_voice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MPmaxVoiceProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "LVLupOverlay",
+      "type": "overlay",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_lup_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/LVLupOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "LVLupOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_lup_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/LVLupOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "MPInc1",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_inc_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MPInc1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "TGInc",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tg_inc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TGIncProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "TimeStopOverlay",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeStopOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "TimeStopOverlayFalse",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_overlay_false",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeStopOverlayFalseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime"
+    },
+    {
+      "name": "ManaBar0",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar1",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar2",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar3",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar4",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar5",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar6",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar7",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar8",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar9",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar10",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar11",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar12",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar13",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_13",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar14",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_14",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar15",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_15",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar16",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_16",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar17",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_17",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar17Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar18",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_18",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar18Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar19",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_19",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar19Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar20",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_20",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar20Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar21",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_21",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar21Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar22",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_22",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar22Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar23",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_23",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar23Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar24",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_24",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar24Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar25",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_25",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar25Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar26",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_26",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar26Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar27",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_27",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar27Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar28",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_28",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar28Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar29",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_29",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar29Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBar30",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_30",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBar30Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "ManaBarLogic",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar_logic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/ManaBarLogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana100",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_100",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana100Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana110",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_110",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana110Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana120",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_120",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana120Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana130",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_130",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana130Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana140",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_140",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana140Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "MaxMana150",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana_150",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxMana150Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/ManaBar"
+    },
+    {
+      "name": "TimeBar0",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar1",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar2",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar3",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar4",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar5",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar6",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar7",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar8",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar9",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar10",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar11",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar12",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar13",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_13",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar14",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_14",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar15",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_15",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeBar16",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_bar_16",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeBar16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime100",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_100",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime100Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime125",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_125",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime125Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime150",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_150",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime150Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime175",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_175",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime175Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime200",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_200",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime200Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime225",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_225",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime225Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MaxTime250",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_time_250",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaxTime250Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "TimeOverlayLogic",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_overlay_logic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeOverlayLogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ManaAndTime/TimeBar"
     }
   ],
   "variable_elements": [
@@ -3233,6 +4705,384 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "LvLtrack",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MPtrack",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "TGtrack",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "LvlUpOverlay",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPInc1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPInc2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPInc3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPInc4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPInc5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGInc6",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_0",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_6",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_7",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_8",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_9",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_10",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_11",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_12",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_13",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_14",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_15",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_16",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_17",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_18",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_19",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_20",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_21",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_22",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_23",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_24",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_25",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_26",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_27",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_28",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_29",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ManaBar_30",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_0",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_6",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_7",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_8",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_9",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_10",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_11",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_12",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_13",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_14",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_15",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TimeBar_16",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3291,6 +5141,30 @@
       ],
       "category": "block",
       "subtitle": "Knifes being thrown"
+    },
+    {
+      "name": "lvlupsound",
+      "files": [
+        "lvlup"
+      ],
+      "category": "neutral",
+      "subtitle": "Level Up sound"
+    },
+    {
+      "name": "mpmax",
+      "files": [
+        "mpmax"
+      ],
+      "category": "neutral",
+      "subtitle": "MP Max sound"
+    },
+    {
+      "name": "tgmax",
+      "files": [
+        "tgmax"
+      ],
+      "category": "neutral",
+      "subtitle": "TG Max sound"
     }
   ],
   "language_map": {
@@ -3314,7 +5188,7 @@
       "gui.luna_nights.warp_choice.label_6": "6",
       "subtitles.throw_knife": "Knifes being thrown",
       "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
-      "item.luna_nights.time_ticket": "Time Gauge Card",
+      "item.luna_nights.time_ticket": "Time Gauge Upgrade",
       "subtitles.knife_hit": "Knife Hit",
       "item.luna_nights.ruby": "Ruby",
       "block.luna_nights.wgd_2": "Warp Gate",
@@ -3332,11 +5206,12 @@
       "block.luna_nights.wgb_1": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button5": "Warp",
       "gui.luna_nights.warp_choice.button_button2": "Warp",
+      "subtitles.lvlup": "Level Up indicator",
       "gui.luna_nights.warp_choice.button_button21": "Button2",
       "gui.luna_nights.warp_choice.button_button3": "Warp",
       "subtitles.timeresumes": "Time Resumes",
       "subtitles.warp": "Warping",
-      "item.luna_nights.mana_ticket": "Mana Card",
+      "item.luna_nights.mana_ticket": "Magic Upgrade",
       "item.luna_nights.maid_outfit_boots": "Maid Boots",
       "item.luna_nights.knifes_projectile_model": "Knifes Projectile",
       "item.luna_nights.icon": "Icon",
@@ -3355,6 +5230,7 @@
       "key.luna_nights.double_jump": "Double Jump/Gliding",
       "item.luna_nights.link_remover": "Warp Gate Disconnector",
       "block.luna_nights.vending_machine_2": "Vending Machine",
+      "subtitles.lvlupsound": "Level Up sound",
       "block.luna_nights.vending_machine_1": "Vending Machine",
       "block.luna_nights.save_telephone": "Telephone Save",
       "block.luna_nights.wgc_3": "Warp Gate",
@@ -3368,6 +5244,7 @@
       "block.luna_nights.wga_2": "Warp Gate",
       "item.luna_nights.maid_outfit_helmet": "Maid Headwear",
       "item.luna_nights.emerald_tln": "Emerald",
+      "subtitles.tgmax": "TG Max sound",
       "item.luna_nights.knifes": "Knifes",
       "gui.luna_nights.warp_choice.Button1": "",
       "block.luna_nights_props.vending_machine_1": "Vending Machine",
@@ -3381,6 +5258,7 @@
       "gui.luna_nights.warp_choice.Button6": "",
       "gui.luna_nights.warp_choice.Button7": "",
       "gui.luna_nights.hp.label_hp_recovery": "MP HP RECOVERY",
+      "subtitles.mpmax": "MP Max sound",
       "subtitles.timestop": "Time Stops",
       "gui.luna_nights.warp_choice.button_button51": "Button5",
       "gui.luna_nights.warp_choice.button_button11": "Button1"
@@ -3438,7 +5316,16 @@
       },
       {
         "name": "ManaAndTime",
-        "children": []
+        "children": [
+          {
+            "name": "ManaBar",
+            "children": []
+          },
+          {
+            "name": "TimeBar",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Gems",
@@ -3446,6 +5333,10 @@
       },
       {
         "name": "MaidOutfit",
+        "children": []
+      },
+      {
+        "name": "Voices",
         "children": []
       }
     ]
