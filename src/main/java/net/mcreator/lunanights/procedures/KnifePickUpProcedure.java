@@ -11,7 +11,8 @@ public class KnifePickUpProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Mana < 100) {
+		if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Mana < (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new LunaNightsModVariables.PlayerVariables())).MaxMana) {
 			{
 				double _setval = (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).Mana + 0.5;
 				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -19,6 +20,11 @@ public class KnifePickUpProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(LunaNightsModItems.KNIFES_PROJECTILE_MODEL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			}
+		} else {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(LunaNightsModItems.KNIFES_PROJECTILE_MODEL.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

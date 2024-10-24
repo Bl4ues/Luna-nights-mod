@@ -93,9 +93,6 @@ public class LunaNightsModVariables {
 			clone.RubyCount = original.RubyCount;
 			clone.SapphireCount = original.SapphireCount;
 			clone.EmeraldCount = original.EmeraldCount;
-			clone.LvLtrack = original.LvLtrack;
-			clone.MPtrack = original.MPtrack;
-			clone.TGtrack = original.TGtrack;
 			clone.LvlUpOverlay = original.LvlUpOverlay;
 			clone.MPInc1 = original.MPInc1;
 			clone.MPInc2 = original.MPInc2;
@@ -156,6 +153,18 @@ public class LunaNightsModVariables {
 			clone.TimeBar_14 = original.TimeBar_14;
 			clone.TimeBar_15 = original.TimeBar_15;
 			clone.TimeBar_16 = original.TimeBar_16;
+			clone.LvLcomp = original.LvLcomp;
+			clone.ManaTrack = original.ManaTrack;
+			clone.MPrestoredOverlay = original.MPrestoredOverlay;
+			clone.TGrestoredOverlay = original.TGrestoredOverlay;
+			clone.MPLoop = original.MPLoop;
+			clone.TGLoop = original.TGLoop;
+			clone.AquaBuff = original.AquaBuff;
+			clone.TopazBuff = original.TopazBuff;
+			clone.RubyBuff = original.RubyBuff;
+			clone.SaphBuff = original.SaphBuff;
+			clone.EmeBuff = original.EmeBuff;
+			clone.KnifeStop = original.KnifeStop;
 			if (!event.isWasDeath()) {
 				clone.WalkOnWater = original.WalkOnWater;
 				clone.JumpVar = original.JumpVar;
@@ -453,17 +462,14 @@ public class LunaNightsModVariables {
 		public double MaxTime = 100.0;
 		public double TimeMultiplier = 0.0;
 		public double Time = 100.0;
-		public double AquamarineCount = 0.0;
-		public double TopazCount = 0.0;
-		public double RubyCount = 0.0;
-		public double SapphireCount = 0.0;
-		public double EmeraldCount = 0.0;
+		public double AquamarineCount = 0;
+		public double TopazCount = 0;
+		public double RubyCount = 0;
+		public double SapphireCount = 0;
+		public double EmeraldCount = 0;
 		public boolean WalkOnWater = false;
 		public boolean JumpVar = false;
 		public boolean DoubleJumping = false;
-		public double LvLtrack = 0;
-		public boolean MPtrack = true;
-		public boolean TGtrack = true;
 		public boolean LvlUpOverlay = false;
 		public boolean MPInc1 = false;
 		public boolean MPInc2 = false;
@@ -524,6 +530,18 @@ public class LunaNightsModVariables {
 		public boolean TimeBar_14 = false;
 		public boolean TimeBar_15 = false;
 		public boolean TimeBar_16 = false;
+		public double LvLcomp = 0;
+		public boolean ManaTrack = false;
+		public boolean MPrestoredOverlay = false;
+		public boolean TGrestoredOverlay = false;
+		public boolean MPLoop = false;
+		public boolean TGLoop = false;
+		public double AquaBuff = 0;
+		public double TopazBuff = 0;
+		public double RubyBuff = 0;
+		public double SaphBuff = 0;
+		public double EmeBuff = 0;
+		public boolean KnifeStop = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -554,9 +572,6 @@ public class LunaNightsModVariables {
 			nbt.putBoolean("WalkOnWater", WalkOnWater);
 			nbt.putBoolean("JumpVar", JumpVar);
 			nbt.putBoolean("DoubleJumping", DoubleJumping);
-			nbt.putDouble("LvLtrack", LvLtrack);
-			nbt.putBoolean("MPtrack", MPtrack);
-			nbt.putBoolean("TGtrack", TGtrack);
 			nbt.putBoolean("LvlUpOverlay", LvlUpOverlay);
 			nbt.putBoolean("MPInc1", MPInc1);
 			nbt.putBoolean("MPInc2", MPInc2);
@@ -617,6 +632,18 @@ public class LunaNightsModVariables {
 			nbt.putBoolean("TimeBar_14", TimeBar_14);
 			nbt.putBoolean("TimeBar_15", TimeBar_15);
 			nbt.putBoolean("TimeBar_16", TimeBar_16);
+			nbt.putDouble("LvLcomp", LvLcomp);
+			nbt.putBoolean("ManaTrack", ManaTrack);
+			nbt.putBoolean("MPrestoredOverlay", MPrestoredOverlay);
+			nbt.putBoolean("TGrestoredOverlay", TGrestoredOverlay);
+			nbt.putBoolean("MPLoop", MPLoop);
+			nbt.putBoolean("TGLoop", TGLoop);
+			nbt.putDouble("AquaBuff", AquaBuff);
+			nbt.putDouble("TopazBuff", TopazBuff);
+			nbt.putDouble("RubyBuff", RubyBuff);
+			nbt.putDouble("SaphBuff", SaphBuff);
+			nbt.putDouble("EmeBuff", EmeBuff);
+			nbt.putBoolean("KnifeStop", KnifeStop);
 			return nbt;
 		}
 
@@ -644,9 +671,6 @@ public class LunaNightsModVariables {
 			WalkOnWater = nbt.getBoolean("WalkOnWater");
 			JumpVar = nbt.getBoolean("JumpVar");
 			DoubleJumping = nbt.getBoolean("DoubleJumping");
-			LvLtrack = nbt.getDouble("LvLtrack");
-			MPtrack = nbt.getBoolean("MPtrack");
-			TGtrack = nbt.getBoolean("TGtrack");
 			LvlUpOverlay = nbt.getBoolean("LvlUpOverlay");
 			MPInc1 = nbt.getBoolean("MPInc1");
 			MPInc2 = nbt.getBoolean("MPInc2");
@@ -707,6 +731,18 @@ public class LunaNightsModVariables {
 			TimeBar_14 = nbt.getBoolean("TimeBar_14");
 			TimeBar_15 = nbt.getBoolean("TimeBar_15");
 			TimeBar_16 = nbt.getBoolean("TimeBar_16");
+			LvLcomp = nbt.getDouble("LvLcomp");
+			ManaTrack = nbt.getBoolean("ManaTrack");
+			MPrestoredOverlay = nbt.getBoolean("MPrestoredOverlay");
+			TGrestoredOverlay = nbt.getBoolean("TGrestoredOverlay");
+			MPLoop = nbt.getBoolean("MPLoop");
+			TGLoop = nbt.getBoolean("TGLoop");
+			AquaBuff = nbt.getDouble("AquaBuff");
+			TopazBuff = nbt.getDouble("TopazBuff");
+			RubyBuff = nbt.getDouble("RubyBuff");
+			SaphBuff = nbt.getDouble("SaphBuff");
+			EmeBuff = nbt.getDouble("EmeBuff");
+			KnifeStop = nbt.getBoolean("KnifeStop");
 		}
 	}
 
@@ -753,9 +789,6 @@ public class LunaNightsModVariables {
 					variables.WalkOnWater = message.data.WalkOnWater;
 					variables.JumpVar = message.data.JumpVar;
 					variables.DoubleJumping = message.data.DoubleJumping;
-					variables.LvLtrack = message.data.LvLtrack;
-					variables.MPtrack = message.data.MPtrack;
-					variables.TGtrack = message.data.TGtrack;
 					variables.LvlUpOverlay = message.data.LvlUpOverlay;
 					variables.MPInc1 = message.data.MPInc1;
 					variables.MPInc2 = message.data.MPInc2;
@@ -816,6 +849,18 @@ public class LunaNightsModVariables {
 					variables.TimeBar_14 = message.data.TimeBar_14;
 					variables.TimeBar_15 = message.data.TimeBar_15;
 					variables.TimeBar_16 = message.data.TimeBar_16;
+					variables.LvLcomp = message.data.LvLcomp;
+					variables.ManaTrack = message.data.ManaTrack;
+					variables.MPrestoredOverlay = message.data.MPrestoredOverlay;
+					variables.TGrestoredOverlay = message.data.TGrestoredOverlay;
+					variables.MPLoop = message.data.MPLoop;
+					variables.TGLoop = message.data.TGLoop;
+					variables.AquaBuff = message.data.AquaBuff;
+					variables.TopazBuff = message.data.TopazBuff;
+					variables.RubyBuff = message.data.RubyBuff;
+					variables.SaphBuff = message.data.SaphBuff;
+					variables.EmeBuff = message.data.EmeBuff;
+					variables.KnifeStop = message.data.KnifeStop;
 				}
 			});
 			context.setPacketHandled(true);

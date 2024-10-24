@@ -12,14 +12,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.lunanights.procedures.KnifesProjectileWhileProjectileFlyingTickProcedure;
 import net.mcreator.lunanights.procedures.KnifesProjectileProjectileHitsBlockProcedure;
+import net.mcreator.lunanights.procedures.KnifesPickupProcedure;
 import net.mcreator.lunanights.init.LunaNightsModItems;
 import net.mcreator.lunanights.init.LunaNightsModEntities;
 
@@ -66,12 +67,6 @@ public class KnifesProjectileEntity extends AbstractArrow implements ItemSupplie
 	}
 
 	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		KnifesProjectileProjectileHitsBlockProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
 		KnifesProjectileProjectileHitsBlockProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
@@ -80,12 +75,13 @@ public class KnifesProjectileEntity extends AbstractArrow implements ItemSupplie
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		KnifesProjectileProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		KnifesPickupProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
+		KnifesProjectileWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this.getOwner());
 		if (this.inGround)
 			this.discard();
 	}

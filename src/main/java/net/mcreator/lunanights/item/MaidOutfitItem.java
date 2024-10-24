@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -22,12 +23,15 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.lunanights.procedures.MaidOutfitTickEventProcedure;
 import net.mcreator.lunanights.client.model.Modelmaid_outfit;
 
 import java.util.function.Consumer;
 import java.util.Map;
 import java.util.List;
 import java.util.Collections;
+
+import com.google.common.collect.Iterables;
 
 public abstract class MaidOutfitItem extends ArmorItem {
 	public MaidOutfitItem(ArmorItem.Type type, Item.Properties properties) {
@@ -100,6 +104,7 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("Worn by those who serve with both elegance and lethal accuracy"));
 		}
 
 		@Override
@@ -110,6 +115,14 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
 			return false;
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				MaidOutfitTickEventProcedure.execute(itemstack);
+			}
 		}
 	}
 
@@ -139,6 +152,7 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("An elegant dress tailored for precision"));
 		}
 
 		@Override
@@ -149,6 +163,14 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
 			return false;
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				MaidOutfitTickEventProcedure.execute(itemstack);
+			}
 		}
 	}
 
@@ -179,6 +201,7 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("A simple yet efficient holder for your blades, always within reach"));
 		}
 
 		@Override
@@ -189,6 +212,14 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
 			return false;
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				MaidOutfitTickEventProcedure.execute(itemstack);
+			}
 		}
 	}
 
@@ -219,6 +250,7 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
+			list.add(Component.literal("Light but durable, these boots ensure every step is quick and precise"));
 		}
 
 		@Override
@@ -229,6 +261,14 @@ public abstract class MaidOutfitItem extends ArmorItem {
 		@Override
 		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
 			return false;
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				MaidOutfitTickEventProcedure.execute(itemstack);
+			}
 		}
 	}
 }

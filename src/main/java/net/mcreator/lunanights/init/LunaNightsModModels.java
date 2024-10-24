@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.lunanights.client.model.Modelmaid_outfit;
+import net.mcreator.lunanights.client.model.Modelknife_entity;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class LunaNightsModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelknife_entity.LAYER_LOCATION, Modelknife_entity::createBodyLayer);
 		event.registerLayerDefinition(Modelmaid_outfit.LAYER_LOCATION, Modelmaid_outfit::createBodyLayer);
 	}
 }

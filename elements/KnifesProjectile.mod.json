@@ -16,13 +16,13 @@
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
-      "name": "KnifesProjectileProjectileHitsBlock"
-    },
-    "onHitsPlayer": {
-      "name": "KnifesProjectileProjectileHitsBlock"
+      "name": "KnifesPickup"
     },
     "onHitsEntity": {
       "name": "KnifesProjectileProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "KnifesProjectileWhileProjectileFlyingTick"
     }
   }
 }

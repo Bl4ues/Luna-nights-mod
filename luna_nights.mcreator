@@ -2907,7 +2907,16 @@
         "files": [
           "src/main/java/net/mcreator/lunanights/procedures/MPmaxVoiceProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Voices"
     },
@@ -4343,6 +4352,327 @@
         ]
       },
       "path": "~/ManaAndTime/TimeBar"
+    },
+    {
+      "name": "MPrestoredOverlay",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_prestored_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MPrestoredOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "TGrestoredOverlay",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_grestored_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TGrestoredOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Voices"
+    },
+    {
+      "name": "NumberOfItems",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "number_of_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/NumberOfItemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCount",
+      "type": "overlay",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "AquaCount",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aqua_count",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/AquaCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "TopazCount",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_count",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TopazCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "RubyCount",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_count",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/RubyCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "SapphireCount",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_count",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/SapphireCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "EmeraldCount",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_count",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/EmeraldCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "KnifesProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifes_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/KnifesProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "MaidOutfitTickEvent",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maid_outfit_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/MaidOutfitTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/MaidOutfit"
+    },
+    {
+      "name": "KnifesPickup",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knifes_pickup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/KnifesPickupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "KnifeFreezeOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_freeze_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/KnifeFreezeOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Knifes"
+    },
+    {
+      "name": "KnifeFreeze",
+      "type": "livingentity",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_freeze",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/entity/KnifeFreezeEntity.java",
+          "src/main/java/net/mcreator/lunanights/client/renderer/KnifeFreezeRenderer.java",
+          "src/main/resources/data/luna_nights/forge/biome_modifier/knife_freeze_biome_modifier.json"
+        ]
+      },
+      "path": "~/Knifes"
     }
   ],
   "variable_elements": [
@@ -4662,31 +4992,31 @@
       "name": "AquamarineCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "TopazCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "RubyCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "SapphireCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "EmeraldCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "WalkOnWater",
@@ -4705,24 +5035,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "LvLtrack",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "MPtrack",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "true"
-    },
-    {
-      "name": "TGtrack",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "true"
     },
     {
       "name": "LvlUpOverlay",
@@ -5083,6 +5395,78 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "LvLcomp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ManaTrack",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPrestoredOverlay",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGrestoredOverlay",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MPLoop",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TGLoop",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "AquaBuff",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TopazBuff",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RubyBuff",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SaphBuff",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "EmeBuff",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "KnifeStop",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5232,6 +5616,7 @@
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "subtitles.lvlupsound": "Level Up sound",
       "block.luna_nights.vending_machine_1": "Vending Machine",
+      "entity.luna_nights.knife_freeze": "Frozen Knife",
       "block.luna_nights.save_telephone": "Telephone Save",
       "block.luna_nights.wgc_3": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button41": "Button4",

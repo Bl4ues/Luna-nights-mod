@@ -14,7 +14,7 @@
           },
           "anchorPoint": "BOTTOM_LEFT",
           "x": 12,
-          "y": 62
+          "y": 64
         }
       },
       {
@@ -732,6 +732,32 @@
           "x": 92,
           "y": 192
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mp_max.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPrestoredOverlay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 1,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "time_max.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TGrestoredOverlay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 1,
+          "y": 102
+        }
       }
     ],
     "baseTexture": "",
@@ -740,7 +766,7 @@
       "sx": 11,
       "sy": 11,
       "ox": 12,
-      "oy": 13,
+      "oy": 16,
       "snapOnGrid": true
     }
   }

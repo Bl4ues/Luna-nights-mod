@@ -35,7 +35,7 @@ public class LvLupVoiceProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).LvLtrack) {
+		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).LvLcomp) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:lvlupsound")), SoundSource.NEUTRAL, 1, 1);
@@ -46,7 +46,7 @@ public class LvLupVoiceProcedure {
 			{
 				double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
 				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.LvLtrack = _setval;
+					capability.LvLcomp = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -70,7 +70,7 @@ public class LvLupVoiceProcedure {
 			{
 				double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
 				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.LvLtrack = _setval;
+					capability.LvLcomp = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "luna_nights:knife_freeze",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

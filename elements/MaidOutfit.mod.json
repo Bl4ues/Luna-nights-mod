@@ -10,6 +10,18 @@
     "textureLeggings": "maidoutfit3",
     "enableBoots": true,
     "textureBoots": "maidoutfit4",
+    "onHelmetTick": {
+      "name": "MaidOutfitTickEvent"
+    },
+    "onBodyTick": {
+      "name": "MaidOutfitTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "MaidOutfitTickEvent"
+    },
+    "onBootsTick": {
+      "name": "MaidOutfitTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:TouhouLunaNights"
     },
@@ -19,16 +31,24 @@
     "leggingsName": "Maid Garter Belt",
     "bootsName": "Maid Boots",
     "helmetSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Worn by those who serve with both elegance and lethal accuracy"
+      ]
     },
     "bodySpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "An elegant dress tailored for precision"
+      ]
     },
     "leggingsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A simple yet efficient holder for your blades, always within reach"
+      ]
     },
     "bootsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Light but durable, these boots ensure every step is quick and precise"
+      ]
     },
     "helmetModelName": "Modelmaid_outfit",
     "helmetModelPart": "Head",

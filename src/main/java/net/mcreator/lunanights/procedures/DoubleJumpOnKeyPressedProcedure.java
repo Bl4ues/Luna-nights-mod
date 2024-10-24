@@ -70,7 +70,7 @@ public class DoubleJumpOnKeyPressedProcedure {
 					}
 				});
 			} else {
-				if (!(!(world.getBlockFloorHeight(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ())) > 0))
+				if (!(world.getBlockFloorHeight(BlockPos.containing(entity.getX(), entity.getY() - 0.5, entity.getZ())) > 0)
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == LunaNightsModItems.MAID_OUTFIT_HELMET.get()
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == LunaNightsModItems.MAID_OUTFIT_CHESTPLATE.get()
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == LunaNightsModItems.MAID_OUTFIT_LEGGINGS.get()

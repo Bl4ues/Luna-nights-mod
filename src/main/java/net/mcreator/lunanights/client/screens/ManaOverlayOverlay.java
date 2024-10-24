@@ -35,6 +35,7 @@ import net.mcreator.lunanights.procedures.TimeBar12Procedure;
 import net.mcreator.lunanights.procedures.TimeBar11Procedure;
 import net.mcreator.lunanights.procedures.TimeBar10Procedure;
 import net.mcreator.lunanights.procedures.TimeBar0Procedure;
+import net.mcreator.lunanights.procedures.TGrestoredOverlayProcedure;
 import net.mcreator.lunanights.procedures.ShowTimeProcedure;
 import net.mcreator.lunanights.procedures.ShowManaProcedure;
 import net.mcreator.lunanights.procedures.ManaDisplayProcedure;
@@ -69,6 +70,7 @@ import net.mcreator.lunanights.procedures.ManaBar12Procedure;
 import net.mcreator.lunanights.procedures.ManaBar11Procedure;
 import net.mcreator.lunanights.procedures.ManaBar10Procedure;
 import net.mcreator.lunanights.procedures.ManaBar0Procedure;
+import net.mcreator.lunanights.procedures.MPrestoredOverlayProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
@@ -98,7 +100,7 @@ public class ManaOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowTimeProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/clock_overlay.png"), 12, h - 178, 0, 0, 156, 156, 156, 156);
+				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/clock_overlay.png"), 12, h - 176, 0, 0, 156, 156, 156, 156);
 			}
 			if (TimeBar16Procedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/clock_16.png"), 12, h - 178, 0, 0, 156, 156, 156, 156);
@@ -255,6 +257,12 @@ public class ManaOverlayOverlay {
 			}
 			if (TimeStopOverlayProcedure.execute(world, entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/timestop.png"), 92, h - 48, 0, 0, 156, 12, 156, 12);
+			}
+			if (MPrestoredOverlayProcedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/mp_max.png"), 1, h - 138, 0, 0, 120, 11, 120, 11);
+			}
+			if (TGrestoredOverlayProcedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/time_max.png"), 1, h - 138, 0, 0, 120, 11, 120, 11);
 			}
 			if (ShowTimeProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
