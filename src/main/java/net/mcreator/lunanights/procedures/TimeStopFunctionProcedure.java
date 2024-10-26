@@ -38,16 +38,10 @@ public class TimeStopFunctionProcedure {
 					_entity.getNavigation().stop();
 				entity.setNoGravity(true);
 				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(true);
-				}
 				entity.setDeltaMovement(new Vec3(0, 0, 0));
 			}
 		} else {
 			entity.setNoGravity(false);
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(false);
-			}
 		}
 	}
 }

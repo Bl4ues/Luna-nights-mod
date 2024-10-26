@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cherry_planks"
+    },
+    "b": {
+      "item": "minecraft:gold_block"
+    },
+    "c": {
+      "item": "minecraft:red_concrete"
+    },
+    "d": {
+      "item": "minecraft:ender_pearl"
+    },
+    "e": {
+      "item": "minecraft:black_concrete"
+    },
+    "f": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "luna_nights:wga_2",
+    "count": 1
+  }
+}

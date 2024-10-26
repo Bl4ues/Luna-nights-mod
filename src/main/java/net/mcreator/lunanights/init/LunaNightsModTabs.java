@@ -20,8 +20,13 @@ public class LunaNightsModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.luna_nights.touhou_luna_nights")).icon(() -> new ItemStack(LunaNightsModItems.ICON.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(LunaNightsModItems.KNIFES.get());
 				tabData.accept(LunaNightsModItems.POCKET_WATCH.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_HELMET.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_CHESTPLATE.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_LEGGINGS.get());
+				tabData.accept(LunaNightsModItems.MAID_OUTFIT_BOOTS.get());
 				tabData.accept(LunaNightsModItems.MANA_TICKET.get());
 				tabData.accept(LunaNightsModItems.TIME_TICKET.get());
+				tabData.accept(LunaNightsModItems.SHOP_TICKET.get());
 				tabData.accept(LunaNightsModBlocks.SAVE_TELEPHONE.get().asItem());
 				tabData.accept(LunaNightsModBlocks.VENDING_MACHINE_1.get().asItem());
 				tabData.accept(LunaNightsModBlocks.WGA_2.get().asItem());
@@ -31,10 +36,7 @@ public class LunaNightsModTabs {
 				tabData.accept(LunaNightsModItems.RUBY.get());
 				tabData.accept(LunaNightsModItems.SAPPHIRE.get());
 				tabData.accept(LunaNightsModItems.EMERALD_TLN.get());
-				tabData.accept(LunaNightsModItems.MAID_OUTFIT_HELMET.get());
-				tabData.accept(LunaNightsModItems.MAID_OUTFIT_CHESTPLATE.get());
-				tabData.accept(LunaNightsModItems.MAID_OUTFIT_LEGGINGS.get());
-				tabData.accept(LunaNightsModItems.MAID_OUTFIT_BOOTS.get());
+				tabData.accept(LunaNightsModItems.HITODAMA_SPAWN_EGG.get());
 			})
 
 					.build());

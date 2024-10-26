@@ -36,7 +36,8 @@
     "name": "Warp Gate",
     "specialInformation": {
       "fixedValue": [
-        "A mystical gate that bends distance, taking you where you need to go"
+        "A mystical gate that bends distance, taking you where you need to go",
+        "7 Gates can be linked simultaneously"
       ]
     },
     "hardness": 10.0,

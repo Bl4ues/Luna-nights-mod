@@ -6,13 +6,11 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.lunanights.network.LunaNightsModVariables;
 import net.mcreator.lunanights.init.LunaNightsModItems;
@@ -51,17 +49,9 @@ public class PocketTimeUsageAndAnimationProcedure {
 		}
 		if (LunaNightsModVariables.MapVariables.get(world).TimeStop) {
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LunaNightsModItems.POCKET_WATCH.get())) : false) {
-				if (entity.isNoGravity() == false) {
-					if ((world.getFluidState(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).createLegacyBlock()).getFluidState().isSource()
-							|| (world.getFluidState(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).createLegacyBlock()).getBlock() instanceof LiquidBlock
-							|| (world.getFluidState(BlockPos.containing(entity.getX(), entity.getY() + 1, entity.getZ())).createLegacyBlock()).getFluidState().isSource()
-							|| (world.getFluidState(BlockPos.containing(entity.getX(), entity.getY() + 1, entity.getZ())).createLegacyBlock()).getBlock() instanceof LiquidBlock) {
-						entity.setNoGravity(true);
-						if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).WalkOnWater == false) {
-							entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-						}
-					} else {
-						entity.setNoGravity(false);
+				if (entity.isInWaterOrBubble() || entity.isInWater() || entity.isInLava() || entity.isSwimming() || entity.isUnderWater()) {
+					if ((entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).WalkOnWater == false) {
+						entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
 					}
 				}
 			}

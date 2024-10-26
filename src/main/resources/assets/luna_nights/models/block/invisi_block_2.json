@@ -1,0 +1,9 @@
+{
+  "parent": "luna_nights:custom/invisiblock_2",
+  "textures": {
+    "all": "luna_nights:block/invisiblock",
+    "particle": "luna_nights:block/invisiblock",
+    "0": "luna_nights:block/invisiblock"
+  },
+  "render_type": "cutout"
+}

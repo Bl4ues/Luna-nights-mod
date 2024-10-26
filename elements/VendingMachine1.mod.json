@@ -36,7 +36,7 @@
     "name": "Vending Machine",
     "specialInformation": {
       "fixedValue": [
-        "A quick stop for health and mana"
+        "A quick stop for HP and MP"
       ]
     },
     "hardness": 3.0,

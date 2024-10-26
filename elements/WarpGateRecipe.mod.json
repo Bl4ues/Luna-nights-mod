@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CHERRY_PLANKS"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Blocks.CHERRY_PLANKS"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WGA2"
+    },
+    "name": "warp_gate_recipe",
+    "namespace": "mod"
+  }
+}

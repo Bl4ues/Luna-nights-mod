@@ -58,7 +58,7 @@ public class VendingMachine1Block extends Block implements SimpleWaterloggedBloc
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A quick stop for health and mana"));
+		list.add(Component.literal("A quick stop for HP and MP"));
 	}
 
 	@Override

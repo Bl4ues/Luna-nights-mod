@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -17,7 +16,6 @@ import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.lunanights.network.LunaNightsModVariables;
 import net.mcreator.lunanights.init.LunaNightsModItems;
-import net.mcreator.lunanights.LunaNightsMod;
 
 import javax.annotation.Nullable;
 
@@ -54,13 +52,10 @@ public class TimeStopAnimationProcedure {
 					}
 				}
 				entity.setDeltaMovement(new Vec3(0, 0, 0));
-				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				entity.setNoGravity(true);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 10, 1, false, false));
-				LunaNightsMod.queueServerWork(20, () -> {
-					entity.setNoGravity(false);
-				});
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 20, 200, false, false));
 			}
 		}
 	}

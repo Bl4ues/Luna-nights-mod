@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "luna_nights:block/invisi_block_2"
+    },
+    "facing=east": {
+      "model": "luna_nights:block/invisi_block_2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "luna_nights:block/invisi_block_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "luna_nights:block/invisi_block_2",
+      "y": 270
+    }
+  }
+}

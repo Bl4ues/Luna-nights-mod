@@ -88,5 +88,32 @@
         "stream": false
       }
     ]
+  },
+  "gemdrop": {
+    "subtitle": "subtitles.gemdrop",
+    "sounds": [
+      {
+        "name": "luna_nights:gemdrop",
+        "stream": false
+      }
+    ]
+  },
+  "destroy": {
+    "subtitle": "subtitles.destroy",
+    "sounds": [
+      {
+        "name": "luna_nights:destroy",
+        "stream": false
+      }
+    ]
+  },
+  "destroy_echo": {
+    "subtitle": "subtitles.destroy_echo",
+    "sounds": [
+      {
+        "name": "luna_nights:destroy_echo",
+        "stream": false
+      }
+    ]
   }
 }

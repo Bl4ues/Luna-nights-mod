@@ -3,7 +3,7 @@
     {
       "name": "TouhouLunaNights",
       "type": "tab",
-      "sortid": 9,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "touhou_luna_nights",
@@ -15,7 +15,7 @@
     {
       "name": "Icon",
       "type": "item",
-      "sortid": 10,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "icon",
@@ -30,7 +30,7 @@
     {
       "name": "SaveTelephone",
       "type": "block",
-      "sortid": 5,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_telephone",
@@ -47,7 +47,7 @@
     {
       "name": "SaveTelephoneMark",
       "type": "procedure",
-      "sortid": 11,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_telephone_mark",
@@ -79,7 +79,7 @@
     {
       "name": "SaveTelephoneSign",
       "type": "block",
-      "sortid": 12,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_telephone_sign",
@@ -96,7 +96,7 @@
     {
       "name": "SaveTelephoneMark2",
       "type": "procedure",
-      "sortid": 13,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_telephone_mark_2",
@@ -128,7 +128,7 @@
     {
       "name": "HP",
       "type": "overlay",
-      "sortid": 14,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hp",
@@ -142,7 +142,7 @@
     {
       "name": "SAVE",
       "type": "overlay",
-      "sortid": 15,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save",
@@ -156,7 +156,7 @@
     {
       "name": "SavingClick",
       "type": "procedure",
-      "sortid": 16,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saving_click",
@@ -192,7 +192,7 @@
     {
       "name": "SAVEDisplay",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_display",
@@ -213,7 +213,7 @@
     {
       "name": "HPDisplay",
       "type": "procedure",
-      "sortid": 18,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hp_display",
@@ -234,7 +234,7 @@
     {
       "name": "VendingMachine1",
       "type": "block",
-      "sortid": 6,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_machine_1",
@@ -251,7 +251,7 @@
     {
       "name": "VendingMark",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_mark",
@@ -283,7 +283,7 @@
     {
       "name": "VendingMachine2",
       "type": "block",
-      "sortid": 20,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_machine_2",
@@ -300,7 +300,7 @@
     {
       "name": "VendingMark2",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_mark_2",
@@ -332,7 +332,7 @@
     {
       "name": "HealingClick",
       "type": "procedure",
-      "sortid": 22,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "healing_click",
@@ -368,7 +368,7 @@
     {
       "name": "VendingMachine3",
       "type": "block",
-      "sortid": 23,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_machine_3",
@@ -385,7 +385,7 @@
     {
       "name": "VendingMark3",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_mark_3",
@@ -417,7 +417,7 @@
     {
       "name": "VendingMachine1BlockAdded",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_machine_1_block_added",
@@ -449,7 +449,7 @@
     {
       "name": "VendingMachine1BlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vending_machine_1_block_destroyed_by_player",
@@ -481,7 +481,7 @@
     {
       "name": "WGA2",
       "type": "block",
-      "sortid": 7,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wga_2",
@@ -499,7 +499,7 @@
     {
       "name": "WGB2",
       "type": "block",
-      "sortid": 27,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgb_2",
@@ -516,7 +516,7 @@
     {
       "name": "WGA1",
       "type": "block",
-      "sortid": 28,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wga_1",
@@ -533,7 +533,7 @@
     {
       "name": "WGA3",
       "type": "block",
-      "sortid": 29,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wga_3",
@@ -550,7 +550,7 @@
     {
       "name": "WGB1",
       "type": "block",
-      "sortid": 30,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgb_1",
@@ -567,7 +567,7 @@
     {
       "name": "WGB3",
       "type": "block",
-      "sortid": 31,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgb_3",
@@ -584,7 +584,7 @@
     {
       "name": "WGC1",
       "type": "block",
-      "sortid": 32,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgc_1",
@@ -601,7 +601,7 @@
     {
       "name": "WGC2",
       "type": "block",
-      "sortid": 33,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgc_2",
@@ -618,7 +618,7 @@
     {
       "name": "WGC3",
       "type": "block",
-      "sortid": 34,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgc_3",
@@ -635,7 +635,7 @@
     {
       "name": "WGD1",
       "type": "block",
-      "sortid": 35,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgd_1",
@@ -652,7 +652,7 @@
     {
       "name": "WGD3",
       "type": "block",
-      "sortid": 36,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgd_3",
@@ -669,7 +669,7 @@
     {
       "name": "WGD2",
       "type": "block",
-      "sortid": 37,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgd_2",
@@ -686,7 +686,7 @@
     {
       "name": "WGD2Symbol",
       "type": "block",
-      "sortid": 38,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wgd_2_symbol",
@@ -703,7 +703,7 @@
     {
       "name": "WGA2BlockAdded",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wga_2_block_added",
@@ -735,7 +735,7 @@
     {
       "name": "A1",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a_1",
@@ -767,7 +767,7 @@
     {
       "name": "A2",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a_2",
@@ -799,7 +799,7 @@
     {
       "name": "A3",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a_3",
@@ -831,7 +831,7 @@
     {
       "name": "B1",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "b_1",
@@ -863,7 +863,7 @@
     {
       "name": "B2",
       "type": "procedure",
-      "sortid": 44,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "b_2",
@@ -895,7 +895,7 @@
     {
       "name": "B3",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "b_3",
@@ -927,7 +927,7 @@
     {
       "name": "C1",
       "type": "procedure",
-      "sortid": 46,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "c_1",
@@ -959,7 +959,7 @@
     {
       "name": "C2",
       "type": "procedure",
-      "sortid": 47,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "c_2",
@@ -991,7 +991,7 @@
     {
       "name": "C3",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "c_3",
@@ -1023,7 +1023,7 @@
     {
       "name": "D1",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "d_1",
@@ -1055,7 +1055,7 @@
     {
       "name": "D3",
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "d_3",
@@ -1087,7 +1087,7 @@
     {
       "name": "D2nS",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "d_2n_s",
@@ -1119,7 +1119,7 @@
     {
       "name": "D2",
       "type": "procedure",
-      "sortid": 52,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "d_2",
@@ -1151,7 +1151,7 @@
     {
       "name": "WarpMenu",
       "type": "gui",
-      "sortid": 53,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warp_menu",
@@ -1167,7 +1167,7 @@
     {
       "name": "WarpChoice",
       "type": "gui",
-      "sortid": 54,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warp_choice",
@@ -1183,7 +1183,7 @@
     {
       "name": "NamedWarp",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "named_warp",
@@ -1223,7 +1223,7 @@
     {
       "name": "WGA2OnBlockRightClicked",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wga_2_on_block_right_clicked",
@@ -1259,7 +1259,7 @@
     {
       "name": "WarpChoiceGUIButtons",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warp_choice_gui_buttons",
@@ -1279,7 +1279,7 @@
     {
       "name": "Button1",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_1",
@@ -1315,7 +1315,7 @@
     {
       "name": "Button2",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_2",
@@ -1351,7 +1351,7 @@
     {
       "name": "Button3",
       "type": "procedure",
-      "sortid": 60,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_3",
@@ -1387,7 +1387,7 @@
     {
       "name": "Button4",
       "type": "procedure",
-      "sortid": 61,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_4",
@@ -1423,7 +1423,7 @@
     {
       "name": "Button5",
       "type": "procedure",
-      "sortid": 62,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_5",
@@ -1459,7 +1459,7 @@
     {
       "name": "Button6",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_6",
@@ -1495,7 +1495,7 @@
     {
       "name": "Button7",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_7",
@@ -1531,7 +1531,7 @@
     {
       "name": "Button1Logic",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_1_logic",
@@ -1552,7 +1552,7 @@
     {
       "name": "Button2Logic",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_2_logic",
@@ -1573,7 +1573,7 @@
     {
       "name": "Button3Logic",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_3_logic",
@@ -1594,7 +1594,7 @@
     {
       "name": "Button4Logic",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_4_logic",
@@ -1615,7 +1615,7 @@
     {
       "name": "Button5Logic",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_5_logic",
@@ -1636,7 +1636,7 @@
     {
       "name": "Button6Logic",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_6_logic",
@@ -1657,7 +1657,7 @@
     {
       "name": "Button7Logic",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "button_7_logic",
@@ -1678,7 +1678,7 @@
     {
       "name": "Label1Logic",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_1_logic",
@@ -1699,7 +1699,7 @@
     {
       "name": "Label2Logic",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_2_logic",
@@ -1720,7 +1720,7 @@
     {
       "name": "Label3Logic",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_3_logic",
@@ -1741,7 +1741,7 @@
     {
       "name": "Label4Logic",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_4_logic",
@@ -1762,7 +1762,7 @@
     {
       "name": "Label5Logic",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_5_logic",
@@ -1783,7 +1783,7 @@
     {
       "name": "Label6Logic",
       "type": "procedure",
-      "sortid": 77,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_6_logic",
@@ -1804,7 +1804,7 @@
     {
       "name": "Label7Logic",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "label_7_logic",
@@ -1825,7 +1825,7 @@
     {
       "name": "Effects",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effects",
@@ -1861,7 +1861,7 @@
     {
       "name": "LinkRemover",
       "type": "item",
-      "sortid": 8,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "link_remover",
@@ -1876,7 +1876,7 @@
     {
       "name": "IfWP1",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_1",
@@ -1897,7 +1897,7 @@
     {
       "name": "IfWP2",
       "type": "procedure",
-      "sortid": 81,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_2",
@@ -1918,7 +1918,7 @@
     {
       "name": "IfWP3",
       "type": "procedure",
-      "sortid": 82,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_3",
@@ -1939,7 +1939,7 @@
     {
       "name": "IfWP4",
       "type": "procedure",
-      "sortid": 83,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_4",
@@ -1960,7 +1960,7 @@
     {
       "name": "IfWP5",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_5",
@@ -1981,7 +1981,7 @@
     {
       "name": "IfWP6",
       "type": "procedure",
-      "sortid": 85,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "if_wp_6",
@@ -2002,7 +2002,7 @@
     {
       "name": "WarpOverlay",
       "type": "overlay",
-      "sortid": 86,
+      "sortid": 96,
       "compiles": true,
       "locked_code": true,
       "registry_name": "warp_overlay",
@@ -2016,7 +2016,7 @@
     {
       "name": "ActivateWatch",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "activate_watch",
@@ -2052,7 +2052,7 @@
     {
       "name": "TimeStop",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_stop",
@@ -2088,7 +2088,7 @@
     {
       "name": "ManaStart",
       "type": "procedure",
-      "sortid": 89,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_start",
@@ -2112,7 +2112,7 @@
     {
       "name": "ManaRegen",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_regen",
@@ -2151,7 +2151,7 @@
     {
       "name": "TimeStart",
       "type": "procedure",
-      "sortid": 91,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_start",
@@ -2175,7 +2175,7 @@
     {
       "name": "TimeRegen",
       "type": "procedure",
-      "sortid": 92,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_regen",
@@ -2199,7 +2199,7 @@
     {
       "name": "KnifesUse",
       "type": "procedure",
-      "sortid": 93,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knifes_use",
@@ -2223,7 +2223,7 @@
     {
       "name": "ManaOverlay",
       "type": "overlay",
-      "sortid": 94,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_overlay",
@@ -2237,7 +2237,7 @@
     {
       "name": "ShowMana",
       "type": "procedure",
-      "sortid": 95,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_mana",
@@ -2258,7 +2258,7 @@
     {
       "name": "ShowTime",
       "type": "procedure",
-      "sortid": 96,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_time",
@@ -2279,7 +2279,7 @@
     {
       "name": "ManaDisplay",
       "type": "procedure",
-      "sortid": 97,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_display",
@@ -2300,7 +2300,7 @@
     {
       "name": "TimeDisplay",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_display",
@@ -2321,7 +2321,7 @@
     {
       "name": "PocketTimeUsageAndAnimation",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pocket_time_usage_and_animation",
@@ -2357,7 +2357,7 @@
     {
       "name": "TimeShader1",
       "type": "procedure",
-      "sortid": 100,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_shader_1",
@@ -2381,7 +2381,7 @@
     {
       "name": "TimeShader2",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_shader_2",
@@ -2405,7 +2405,7 @@
     {
       "name": "TimeStopAnimation",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_stop_animation",
@@ -2429,7 +2429,7 @@
     {
       "name": "SetupAnimations",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "setup_animations",
@@ -2459,7 +2459,7 @@
     {
       "name": "ManaTicket",
       "type": "item",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_ticket",
@@ -2474,7 +2474,7 @@
     {
       "name": "TimeTicket",
       "type": "item",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_ticket",
@@ -2489,7 +2489,7 @@
     {
       "name": "ManaCardConsume",
       "type": "procedure",
-      "sortid": 104,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_card_consume",
@@ -2509,7 +2509,7 @@
     {
       "name": "TimeCardConsume",
       "type": "procedure",
-      "sortid": 105,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_card_consume",
@@ -2529,7 +2529,7 @@
     {
       "name": "Aquamarine",
       "type": "item",
-      "sortid": 107,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aquamarine",
@@ -2544,7 +2544,7 @@
     {
       "name": "Topaz",
       "type": "item",
-      "sortid": 108,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "topaz",
@@ -2559,7 +2559,7 @@
     {
       "name": "Ruby",
       "type": "item",
-      "sortid": 109,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruby",
@@ -2574,7 +2574,7 @@
     {
       "name": "Sapphire",
       "type": "item",
-      "sortid": 110,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sapphire",
@@ -2589,7 +2589,7 @@
     {
       "name": "EmeraldTLN",
       "type": "item",
-      "sortid": 111,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emerald_tln",
@@ -2616,6 +2616,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -2689,7 +2701,7 @@
     {
       "name": "TimeStopFunction",
       "type": "procedure",
-      "sortid": 121,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_stop_function",
@@ -2713,7 +2725,7 @@
     {
       "name": "KnifePickUp",
       "type": "procedure",
-      "sortid": 124,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knife_pick_up",
@@ -2733,7 +2745,7 @@
     {
       "name": "ManaAndTGTickets",
       "type": "loottable",
-      "sortid": 125,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_and_tg_tickets",
@@ -2747,7 +2759,7 @@
     {
       "name": "MaidOutfit",
       "type": "armor",
-      "sortid": 126,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "maid_outfit",
@@ -2765,7 +2777,7 @@
     {
       "name": "DoubleJumpOnKeyPressed",
       "type": "procedure",
-      "sortid": 127,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "double_jump_on_key_pressed",
@@ -2789,7 +2801,7 @@
     {
       "name": "DoubleJump",
       "type": "keybind",
-      "sortid": 128,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "double_jump",
@@ -2803,7 +2815,7 @@
     {
       "name": "OutfitBonus",
       "type": "procedure",
-      "sortid": 130,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "outfit_bonus",
@@ -2827,7 +2839,7 @@
     {
       "name": "DoubleJumpOnKeyReleased",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "double_jump_on_key_released",
@@ -2851,7 +2863,7 @@
     {
       "name": "OutfitBuffs",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "outfit_buffs",
@@ -2875,7 +2887,7 @@
     {
       "name": "LvLupVoice",
       "type": "procedure",
-      "sortid": 135,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lv_lup_voice",
@@ -2899,7 +2911,7 @@
     {
       "name": "MPmaxVoice",
       "type": "procedure",
-      "sortid": 136,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_pmax_voice",
@@ -2923,7 +2935,7 @@
     {
       "name": "LVLupOverlay",
       "type": "overlay",
-      "sortid": 137,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lv_lup_overlay",
@@ -2937,7 +2949,7 @@
     {
       "name": "LVLupOverlayDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 138,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lv_lup_overlay_display_overlay_ingame",
@@ -2958,7 +2970,7 @@
     {
       "name": "MPInc1",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mp_inc_1",
@@ -2978,7 +2990,7 @@
     {
       "name": "TGInc",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tg_inc",
@@ -2998,7 +3010,7 @@
     {
       "name": "TimeStopOverlay",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_stop_overlay",
@@ -3023,7 +3035,7 @@
     {
       "name": "TimeStopOverlayFalse",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_stop_overlay_false",
@@ -3048,7 +3060,7 @@
     {
       "name": "ManaBar0",
       "type": "procedure",
-      "sortid": 144,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_0",
@@ -3069,7 +3081,7 @@
     {
       "name": "ManaBar1",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_1",
@@ -3090,7 +3102,7 @@
     {
       "name": "ManaBar2",
       "type": "procedure",
-      "sortid": 146,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_2",
@@ -3111,7 +3123,7 @@
     {
       "name": "ManaBar3",
       "type": "procedure",
-      "sortid": 147,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_3",
@@ -3132,7 +3144,7 @@
     {
       "name": "ManaBar4",
       "type": "procedure",
-      "sortid": 148,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_4",
@@ -3153,7 +3165,7 @@
     {
       "name": "ManaBar5",
       "type": "procedure",
-      "sortid": 149,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_5",
@@ -3174,7 +3186,7 @@
     {
       "name": "ManaBar6",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_6",
@@ -3195,7 +3207,7 @@
     {
       "name": "ManaBar7",
       "type": "procedure",
-      "sortid": 151,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_7",
@@ -3216,7 +3228,7 @@
     {
       "name": "ManaBar8",
       "type": "procedure",
-      "sortid": 152,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_8",
@@ -3237,7 +3249,7 @@
     {
       "name": "ManaBar9",
       "type": "procedure",
-      "sortid": 153,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_9",
@@ -3258,7 +3270,7 @@
     {
       "name": "ManaBar10",
       "type": "procedure",
-      "sortid": 154,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_10",
@@ -3279,7 +3291,7 @@
     {
       "name": "ManaBar11",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_11",
@@ -3300,7 +3312,7 @@
     {
       "name": "ManaBar12",
       "type": "procedure",
-      "sortid": 156,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_12",
@@ -3321,7 +3333,7 @@
     {
       "name": "ManaBar13",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_13",
@@ -3342,7 +3354,7 @@
     {
       "name": "ManaBar14",
       "type": "procedure",
-      "sortid": 158,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_14",
@@ -3363,7 +3375,7 @@
     {
       "name": "ManaBar15",
       "type": "procedure",
-      "sortid": 159,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_15",
@@ -3384,7 +3396,7 @@
     {
       "name": "ManaBar16",
       "type": "procedure",
-      "sortid": 160,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_16",
@@ -3405,7 +3417,7 @@
     {
       "name": "ManaBar17",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_17",
@@ -3426,7 +3438,7 @@
     {
       "name": "ManaBar18",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_18",
@@ -3447,7 +3459,7 @@
     {
       "name": "ManaBar19",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_19",
@@ -3468,7 +3480,7 @@
     {
       "name": "ManaBar20",
       "type": "procedure",
-      "sortid": 164,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_20",
@@ -3489,7 +3501,7 @@
     {
       "name": "ManaBar21",
       "type": "procedure",
-      "sortid": 165,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_21",
@@ -3510,7 +3522,7 @@
     {
       "name": "ManaBar22",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_22",
@@ -3531,7 +3543,7 @@
     {
       "name": "ManaBar23",
       "type": "procedure",
-      "sortid": 167,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_23",
@@ -3552,7 +3564,7 @@
     {
       "name": "ManaBar24",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_24",
@@ -3573,7 +3585,7 @@
     {
       "name": "ManaBar25",
       "type": "procedure",
-      "sortid": 169,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_25",
@@ -3594,7 +3606,7 @@
     {
       "name": "ManaBar26",
       "type": "procedure",
-      "sortid": 170,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_26",
@@ -3615,7 +3627,7 @@
     {
       "name": "ManaBar27",
       "type": "procedure",
-      "sortid": 171,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_27",
@@ -3636,7 +3648,7 @@
     {
       "name": "ManaBar28",
       "type": "procedure",
-      "sortid": 172,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_28",
@@ -3657,7 +3669,7 @@
     {
       "name": "ManaBar29",
       "type": "procedure",
-      "sortid": 173,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_29",
@@ -3678,7 +3690,7 @@
     {
       "name": "ManaBar30",
       "type": "procedure",
-      "sortid": 174,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_30",
@@ -3699,7 +3711,7 @@
     {
       "name": "ManaBarLogic",
       "type": "procedure",
-      "sortid": 175,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_bar_logic",
@@ -3719,7 +3731,7 @@
     {
       "name": "MaxMana100",
       "type": "procedure",
-      "sortid": 176,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_100",
@@ -3739,7 +3751,7 @@
     {
       "name": "MaxMana110",
       "type": "procedure",
-      "sortid": 177,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_110",
@@ -3759,7 +3771,7 @@
     {
       "name": "MaxMana120",
       "type": "procedure",
-      "sortid": 178,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_120",
@@ -3779,7 +3791,7 @@
     {
       "name": "MaxMana130",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_130",
@@ -3799,7 +3811,7 @@
     {
       "name": "MaxMana140",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_140",
@@ -3819,7 +3831,7 @@
     {
       "name": "MaxMana150",
       "type": "procedure",
-      "sortid": 181,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_mana_150",
@@ -3839,7 +3851,7 @@
     {
       "name": "TimeBar0",
       "type": "procedure",
-      "sortid": 182,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_0",
@@ -3860,7 +3872,7 @@
     {
       "name": "TimeBar1",
       "type": "procedure",
-      "sortid": 183,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_1",
@@ -3881,7 +3893,7 @@
     {
       "name": "TimeBar2",
       "type": "procedure",
-      "sortid": 184,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_2",
@@ -3902,7 +3914,7 @@
     {
       "name": "TimeBar3",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_3",
@@ -3923,7 +3935,7 @@
     {
       "name": "TimeBar4",
       "type": "procedure",
-      "sortid": 186,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_4",
@@ -3944,7 +3956,7 @@
     {
       "name": "TimeBar5",
       "type": "procedure",
-      "sortid": 187,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_5",
@@ -3965,7 +3977,7 @@
     {
       "name": "TimeBar6",
       "type": "procedure",
-      "sortid": 188,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_6",
@@ -3986,7 +3998,7 @@
     {
       "name": "TimeBar7",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_7",
@@ -4007,7 +4019,7 @@
     {
       "name": "TimeBar8",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_8",
@@ -4028,7 +4040,7 @@
     {
       "name": "TimeBar9",
       "type": "procedure",
-      "sortid": 191,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_9",
@@ -4049,7 +4061,7 @@
     {
       "name": "TimeBar10",
       "type": "procedure",
-      "sortid": 192,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_10",
@@ -4070,7 +4082,7 @@
     {
       "name": "TimeBar11",
       "type": "procedure",
-      "sortid": 193,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_11",
@@ -4091,7 +4103,7 @@
     {
       "name": "TimeBar12",
       "type": "procedure",
-      "sortid": 194,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_12",
@@ -4112,7 +4124,7 @@
     {
       "name": "TimeBar13",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_13",
@@ -4133,7 +4145,7 @@
     {
       "name": "TimeBar14",
       "type": "procedure",
-      "sortid": 196,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_14",
@@ -4154,7 +4166,7 @@
     {
       "name": "TimeBar15",
       "type": "procedure",
-      "sortid": 197,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_15",
@@ -4175,7 +4187,7 @@
     {
       "name": "TimeBar16",
       "type": "procedure",
-      "sortid": 198,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_bar_16",
@@ -4196,7 +4208,7 @@
     {
       "name": "MaxTime100",
       "type": "procedure",
-      "sortid": 199,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_100",
@@ -4216,7 +4228,7 @@
     {
       "name": "MaxTime125",
       "type": "procedure",
-      "sortid": 200,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_125",
@@ -4236,7 +4248,7 @@
     {
       "name": "MaxTime150",
       "type": "procedure",
-      "sortid": 201,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_150",
@@ -4256,7 +4268,7 @@
     {
       "name": "MaxTime175",
       "type": "procedure",
-      "sortid": 202,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_175",
@@ -4276,7 +4288,7 @@
     {
       "name": "MaxTime200",
       "type": "procedure",
-      "sortid": 203,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_200",
@@ -4296,7 +4308,7 @@
     {
       "name": "MaxTime225",
       "type": "procedure",
-      "sortid": 204,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_225",
@@ -4316,7 +4328,7 @@
     {
       "name": "MaxTime250",
       "type": "procedure",
-      "sortid": 205,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "max_time_250",
@@ -4336,7 +4348,7 @@
     {
       "name": "TimeOverlayLogic",
       "type": "procedure",
-      "sortid": 206,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "time_overlay_logic",
@@ -4356,7 +4368,7 @@
     {
       "name": "MPrestoredOverlay",
       "type": "procedure",
-      "sortid": 208,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_prestored_overlay",
@@ -4377,7 +4389,7 @@
     {
       "name": "TGrestoredOverlay",
       "type": "procedure",
-      "sortid": 209,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "t_grestored_overlay",
@@ -4398,7 +4410,7 @@
     {
       "name": "NumberOfItems",
       "type": "procedure",
-      "sortid": 210,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "number_of_items",
@@ -4418,7 +4430,7 @@
     {
       "name": "GemCount",
       "type": "overlay",
-      "sortid": 211,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gem_count",
@@ -4432,7 +4444,7 @@
     {
       "name": "AquaCount",
       "type": "procedure",
-      "sortid": 212,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aqua_count",
@@ -4453,7 +4465,7 @@
     {
       "name": "TopazCount",
       "type": "procedure",
-      "sortid": 213,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "topaz_count",
@@ -4474,7 +4486,7 @@
     {
       "name": "RubyCount",
       "type": "procedure",
-      "sortid": 214,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruby_count",
@@ -4495,7 +4507,7 @@
     {
       "name": "SapphireCount",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sapphire_count",
@@ -4516,7 +4528,7 @@
     {
       "name": "EmeraldCount",
       "type": "procedure",
-      "sortid": 216,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emerald_count",
@@ -4537,7 +4549,7 @@
     {
       "name": "KnifesProjectileWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 217,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knifes_projectile_while_projectile_flying_tick",
@@ -4573,7 +4585,7 @@
     {
       "name": "MaidOutfitTickEvent",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "maid_outfit_tick_event",
@@ -4593,7 +4605,7 @@
     {
       "name": "KnifesPickup",
       "type": "procedure",
-      "sortid": 219,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knifes_pickup",
@@ -4625,7 +4637,7 @@
     {
       "name": "KnifeFreezeOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 221,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knife_freeze_on_entity_tick_update",
@@ -4661,7 +4673,7 @@
     {
       "name": "KnifeFreeze",
       "type": "livingentity",
-      "sortid": 222,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "knife_freeze",
@@ -4673,6 +4685,179 @@
         ]
       },
       "path": "~/Knifes"
+    },
+    {
+      "name": "InvisiBlock1UpdateTick",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisi_block_1_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/InvisiBlock1UpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation/InvisiBlock"
+    },
+    {
+      "name": "InvisiBlock1",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisi_block_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/invisi_block_1.json",
+          "src/main/java/net/mcreator/lunanights/block/InvisiBlock1Block.java",
+          "src/main/resources/assets/luna_nights/blockstates/invisi_block_1.json",
+          "src/main/resources/assets/luna_nights/models/item/invisi_block_1.json"
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation/InvisiBlock"
+    },
+    {
+      "name": "InvisiBlock2",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisi_block_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/luna_nights/models/block/invisi_block_2.json",
+          "src/main/resources/assets/luna_nights/blockstates/invisi_block_2.json",
+          "src/main/java/net/mcreator/lunanights/block/InvisiBlock2Block.java",
+          "src/main/resources/assets/luna_nights/models/item/invisi_block_2.json"
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation/InvisiBlock"
+    },
+    {
+      "name": "ShopTicket",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_ticket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/item/ShopTicketItem.java",
+          "src/main/resources/assets/luna_nights/models/item/shop_ticket.json"
+        ]
+      },
+      "path": "~/Nitori"
+    },
+    {
+      "name": "WarpGateRecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/luna_nights/recipes/warp_gate_recipe.json"
+        ]
+      },
+      "path": "~/WarpGate"
+    },
+    {
+      "name": "TelephoneRecipe",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "telephone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/luna_nights/recipes/telephone_recipe.json"
+        ]
+      },
+      "path": "~/SaveTelephone"
+    },
+    {
+      "name": "VendingMachineRecipe",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vending_machine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/luna_nights/recipes/vending_machine_recipe.json"
+        ]
+      },
+      "path": "~/VendingMachine"
+    },
+    {
+      "name": "EnemyDies",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/EnemyDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enemies"
+    },
+    {
+      "name": "Hitodama",
+      "type": "animatedentity",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitodama",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/entity/model/HitodamaModel.java",
+          "src/main/resources/assets/luna_nights/models/item/hitodama_spawn_egg.json",
+          "src/main/java/net/mcreator/lunanights/client/renderer/HitodamaRenderer.java",
+          "src/main/java/net/mcreator/lunanights/entity/HitodamaEntity.java",
+          "src/main/resources/data/luna_nights/forge/biome_modifier/hitodama_biome_modifier.json"
+        ]
+      },
+      "path": "~/Enemies/Hitodama"
     }
   ],
   "variable_elements": [
@@ -5549,19 +5734,40 @@
       ],
       "category": "neutral",
       "subtitle": "TG Max sound"
+    },
+    {
+      "name": "gemdrop",
+      "files": [
+        "gemdrop"
+      ],
+      "category": "block",
+      "subtitle": "Gem Drop"
+    },
+    {
+      "name": "destroy",
+      "files": [
+        "destroy"
+      ],
+      "category": "neutral",
+      "subtitle": "Enemy destroyed"
+    },
+    {
+      "name": "destroy_echo",
+      "files": [
+        "destroy_echo"
+      ],
+      "category": "neutral",
+      "subtitle": "Boss destroyed"
     }
   ],
   "language_map": {
     "en_us": {
-      "subtitles.tel_save": "Telephone ringing",
-      "item.luna_nights.maid_outfit_leggings": "Maid Garter Belt",
       "gui.luna_nights.warp_choice.button_button6": "Warp",
       "gui.luna_nights.mana_overlay.label_time1": "",
       "gui.luna_nights.warp_choice.button_button7": "Warp",
       "item_group.luna_nights_props.touhou_luna_nights": "Touhou Luna Nights",
       "gui.luna_nights.mana_overlay.label_mana": "",
       "gui.luna_nights.warp_choice.label_1": "1",
-      "gui.luna_nights.warp_menu.label_warp_gate": "WARP GATE",
       "gui.luna_nights.warp_choice.label_3": "3",
       "gui.luna_nights.warp_choice.label_2": "2",
       "gui.luna_nights.warp_choice.label_5": "5",
@@ -5570,63 +5776,40 @@
       "gui.luna_nights.warp_choice.label_7": "7",
       "item.luna_nights.sapphire": "Sapphire",
       "gui.luna_nights.warp_choice.label_6": "6",
-      "subtitles.throw_knife": "Knifes being thrown",
+      "item.luna_nights.time_ticket": "Eternal Clock Upgrade",
       "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
-      "item.luna_nights.time_ticket": "Time Gauge Upgrade",
-      "subtitles.knife_hit": "Knife Hit",
       "item.luna_nights.ruby": "Ruby",
       "block.luna_nights.wgd_2": "Warp Gate",
+      "death.attack.hitodama": "%1$s fell to the light of a Hitodama.",
       "block.luna_nights.wgd_3": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button1": "Warp",
-      "block.luna_nights.wgb_2": "Warp Gate",
       "subtitles.soda_machine": "Vending machine",
-      "block.luna_nights.wgb_3": "Warp Gate",
-      "block.luna_nights.wgd_1": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button61": "Button6",
-      "gui.luna_nights.mana_overlay.label_time": "TG",
-      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
+      "block.luna_nights.wgd_1": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button4": "Warp",
-      "gui.luna_nights.mana_overlay.label_mp": "MP",
-      "block.luna_nights.wgb_1": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button5": "Warp",
       "gui.luna_nights.warp_choice.button_button2": "Warp",
-      "subtitles.lvlup": "Level Up indicator",
-      "gui.luna_nights.warp_choice.button_button21": "Button2",
       "gui.luna_nights.warp_choice.button_button3": "Warp",
-      "subtitles.timeresumes": "Time Resumes",
       "subtitles.warp": "Warping",
-      "item.luna_nights.mana_ticket": "Magic Upgrade",
+      "item.luna_nights.mana_ticket": "MP Upgrade",
       "item.luna_nights.maid_outfit_boots": "Maid Boots",
-      "item.luna_nights.knifes_projectile_model": "Knifes Projectile",
-      "item.luna_nights.icon": "Icon",
-      "item.luna_nights.aquamarine": "Aquamarine",
-      "block.luna_nights_props.save_telephone": "Telephone Save",
-      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
+      "subtitles.destroy_echo": "Boss destroyed",
       "gui.luna_nights.warp_choice.button_button71": "Button7",
-      "gui.luna_nights.warp_choice.button_button31": "Button3",
       "item_group.luna_nights.touhou_luna_nights": "Touhou Luna Nights",
       "gui.luna_nights.warp_menu.WarpGateName": "Warp Gate Name",
-      "block.luna_nights_props.save_telephone_sign": "Telephone Save",
+      "item.luna_nights.shop_ticket": "Shop Ticket",
       "item.luna_nights_props.icon": "Icon",
       "block.luna_nights.wgd_2_symbol": "Warp Gate",
-      "item.luna_nights.pocket_watch": "Pocket Watch",
-      "item.luna_nights.topaz": "Topaz",
       "key.luna_nights.double_jump": "Double Jump/Gliding",
-      "item.luna_nights.link_remover": "Warp Gate Disconnector",
+      "item.luna_nights.topaz": "Topaz",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "subtitles.lvlupsound": "Level Up sound",
       "block.luna_nights.vending_machine_1": "Vending Machine",
-      "entity.luna_nights.knife_freeze": "Frozen Knife",
-      "block.luna_nights.save_telephone": "Telephone Save",
+      "subtitles.destroy": "Enemy destroyed",
       "block.luna_nights.wgc_3": "Warp Gate",
-      "gui.luna_nights.warp_choice.button_button41": "Button4",
-      "block.luna_nights.wga_3": "Warp Gate",
       "block.luna_nights.wgc_1": "Warp Gate",
       "block.luna_nights.wgc_2": "Warp Gate",
       "block.luna_nights.vending_machine_3": "Vending Machine",
-      "item.luna_nights.maid_outfit_chestplate": "Maid Dress",
-      "block.luna_nights.wga_1": "Warp Gate",
-      "block.luna_nights.wga_2": "Warp Gate",
       "item.luna_nights.maid_outfit_helmet": "Maid Headwear",
       "item.luna_nights.emerald_tln": "Emerald",
       "subtitles.tgmax": "TG Max sound",
@@ -5642,11 +5825,46 @@
       "gui.luna_nights.warp_choice.Button5": "",
       "gui.luna_nights.warp_choice.Button6": "",
       "gui.luna_nights.warp_choice.Button7": "",
+      "gui.luna_nights.warp_choice.button_button11": "Button1",
+      "subtitles.tel_save": "Telephone ringing",
+      "item.luna_nights.maid_outfit_leggings": "Maid Garter Belt",
+      "gui.luna_nights.warp_menu.label_warp_gate": "WARP GATE",
+      "subtitles.throw_knife": "Knifes being thrown",
+      "subtitles.knife_hit": "Knife Hit",
+      "block.luna_nights.wgb_2": "Warp Gate",
+      "block.luna_nights.wgb_3": "Warp Gate",
+      "gui.luna_nights.mana_overlay.label_time": "TG",
+      "gui.luna_nights_props.hp.label_hp_recovery": "HP RECOVERY",
+      "gui.luna_nights.mana_overlay.label_mp": "MP",
+      "block.luna_nights.wgb_1": "Warp Gate",
+      "subtitles.lvlup": "Level Up indicator",
+      "gui.luna_nights.warp_choice.button_button21": "Button2",
+      "subtitles.timeresumes": "Time Resumes",
+      "item.luna_nights.knifes_projectile_model": "Knifes Projectile",
+      "item.luna_nights.icon": "Icon",
+      "subtitles.gemdrop": "Gem Drop",
+      "item.luna_nights.aquamarine": "Aquamarine",
+      "block.luna_nights_props.save_telephone": "Telephone Save",
+      "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
+      "entity.luna_nights.hitodama": "Hitodama",
+      "gui.luna_nights.warp_choice.button_button31": "Button3",
+      "block.luna_nights_props.save_telephone_sign": "Telephone Save",
+      "block.luna_nights.invisi_block_1": "Invisible Block",
+      "item.luna_nights.pocket_watch": "Pocket Watch",
+      "item.luna_nights.link_remover": "Warp Gate Disconnector",
+      "item.luna_nights.hitodama_spawn_egg": "Hitodama Spawn Egg",
+      "entity.luna_nights.knife_freeze": "Frozen Knife",
+      "block.luna_nights.save_telephone": "Telephone Save",
+      "gui.luna_nights.warp_choice.button_button41": "Button4",
+      "block.luna_nights.wga_3": "Warp Gate",
+      "item.luna_nights.maid_outfit_chestplate": "Maid Dress",
+      "block.luna_nights.wga_1": "Warp Gate",
+      "block.luna_nights.wga_2": "Warp Gate",
       "gui.luna_nights.hp.label_hp_recovery": "MP HP RECOVERY",
       "subtitles.mpmax": "MP Max sound",
       "subtitles.timestop": "Time Stops",
       "gui.luna_nights.warp_choice.button_button51": "Button5",
-      "gui.luna_nights.warp_choice.button_button11": "Button1"
+      "block.luna_nights.invisi_block_2": "Invisible Block"
     }
   },
   "foldersRoot": {
@@ -5691,7 +5909,12 @@
         "children": [
           {
             "name": "PocketAnimation",
-            "children": []
+            "children": [
+              {
+                "name": "InvisiBlock",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -5723,6 +5946,19 @@
       {
         "name": "Voices",
         "children": []
+      },
+      {
+        "name": "Nitori",
+        "children": []
+      },
+      {
+        "name": "Enemies",
+        "children": [
+          {
+            "name": "Hitodama",
+            "children": []
+          }
+        ]
       }
     ]
   },

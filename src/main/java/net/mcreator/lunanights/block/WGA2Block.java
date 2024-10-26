@@ -57,6 +57,7 @@ public class WGA2Block extends Block implements EntityBlock {
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("A mystical gate that bends distance, taking you where you need to go"));
+		list.add(Component.literal("7 Gates can be linked simultaneously"));
 	}
 
 	@Override

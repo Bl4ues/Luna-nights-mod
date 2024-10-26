@@ -25,4 +25,7 @@ public class LunaNightsModSounds {
 	public static final RegistryObject<SoundEvent> LVLUPSOUND = REGISTRY.register("lvlupsound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "lvlupsound")));
 	public static final RegistryObject<SoundEvent> MPMAX = REGISTRY.register("mpmax", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "mpmax")));
 	public static final RegistryObject<SoundEvent> TGMAX = REGISTRY.register("tgmax", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "tgmax")));
+	public static final RegistryObject<SoundEvent> GEMDROP = REGISTRY.register("gemdrop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "gemdrop")));
+	public static final RegistryObject<SoundEvent> DESTROY = REGISTRY.register("destroy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "destroy")));
+	public static final RegistryObject<SoundEvent> DESTROY_ECHO = REGISTRY.register("destroy_echo", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("luna_nights", "destroy_echo")));
 }
