@@ -35,44 +35,46 @@ public class LvLupVoiceProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).LvLcomp) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:lvlupsound")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:lvlupsound")), SoundSource.NEUTRAL, 1, 1, false);
+		if (entity.isAlive()) {
+			if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > (entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LunaNightsModVariables.PlayerVariables())).LvLcomp) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:lvlupsound")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:lvlupsound")), SoundSource.NEUTRAL, 1, 1, false);
+					}
 				}
-			}
-			{
-				double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
-				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.LvLcomp = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			{
-				boolean _setval = true;
-				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.LvlUpOverlay = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			LunaNightsMod.queueServerWork(80, () -> {
 				{
-					boolean _setval = false;
+					double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
+					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.LvLcomp = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = true;
 					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.LvlUpOverlay = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
-			});
-		} else {
-			{
-				double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
-				entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.LvLcomp = _setval;
-					capability.syncPlayerVariables(entity);
+				LunaNightsMod.queueServerWork(80, () -> {
+					{
+						boolean _setval = false;
+						entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.LvlUpOverlay = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 				});
+			} else {
+				{
+					double _setval = entity instanceof Player _plr ? _plr.experienceLevel : 0;
+					entity.getCapability(LunaNightsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.LvLcomp = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

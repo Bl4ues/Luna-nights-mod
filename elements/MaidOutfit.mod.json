@@ -91,9 +91,9 @@
       "fixedValue": false
     },
     "maxDamage": 25,
-    "damageValueHelmet": 1,
-    "damageValueBody": 4,
-    "damageValueLeggings": 2,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
+    "damageValueLeggings": 4,
     "damageValueBoots": 1,
     "enchantability": 9,
     "toughness": 0.0,

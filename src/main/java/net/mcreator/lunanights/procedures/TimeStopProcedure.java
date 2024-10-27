@@ -23,8 +23,6 @@ public class TimeStopProcedure {
 			return;
 		if (LunaNightsModVariables.MapVariables.get(world).TimeStop) {
 			TimeShader1Procedure.execute(world, entity);
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "stopsound");
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:timestop")), SoundSource.BLOCKS, 2, 1);

@@ -15,12 +15,13 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.lunanights.network.GemCountKeyMessage;
 import net.mcreator.lunanights.network.DoubleJumpMessage;
 import net.mcreator.lunanights.LunaNightsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class LunaNightsModKeyMappings {
-	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.luna_nights.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.movement") {
+	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.luna_nights.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.lunanights") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -38,11 +39,25 @@ public class LunaNightsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping GEM_COUNT_KEY = new KeyMapping("key.luna_nights.gem_count_key", GLFW.GLFW_KEY_Z, "key.categories.lunanights") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				LunaNightsMod.PACKET_HANDLER.sendToServer(new GemCountKeyMessage(0, 0));
+				GemCountKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long DOUBLE_JUMP_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP);
+		event.register(GEM_COUNT_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -51,6 +66,7 @@ public class LunaNightsModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				DOUBLE_JUMP.consumeClick();
+				GEM_COUNT_KEY.consumeClick();
 			}
 		}
 	}

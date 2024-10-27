@@ -4,7 +4,7 @@
   "definition": {
     "triggerKey": "SPACE",
     "keyBindingName": "Double Jump/Gliding",
-    "keyBindingCategoryKey": "movement",
+    "keyBindingCategoryKey": "lunanights",
     "onKeyPressed": {
       "name": "DoubleJumpOnKeyPressed"
     },

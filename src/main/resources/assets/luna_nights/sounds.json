@@ -115,5 +115,113 @@
         "stream": false
       }
     ]
+  },
+  "door": {
+    "subtitle": "subtitles.door",
+    "sounds": [
+      {
+        "name": "luna_nights:door",
+        "stream": false
+      }
+    ]
+  },
+  "doublejump": {
+    "subtitle": "subtitles.doublejump",
+    "sounds": [
+      {
+        "name": "luna_nights:doublejump",
+        "stream": false
+      }
+    ]
+  },
+  "hit": {
+    "subtitle": "subtitles.hit",
+    "sounds": [
+      {
+        "name": "luna_nights:hit",
+        "stream": false
+      }
+    ]
+  },
+  "item_select": {
+    "subtitle": "subtitles.item_select",
+    "sounds": [
+      {
+        "name": "luna_nights:item_select",
+        "stream": false
+      }
+    ]
+  },
+  "landing": {
+    "subtitle": "subtitles.landing",
+    "sounds": [
+      {
+        "name": "luna_nights:landing",
+        "stream": false
+      }
+    ]
+  },
+  "lightsaber": {
+    "subtitle": "subtitles.lightsaber",
+    "sounds": [
+      {
+        "name": "luna_nights:lightsaber",
+        "stream": false
+      }
+    ]
+  },
+  "lightsaberhit": {
+    "subtitle": "subtitles.lightsaberhit",
+    "sounds": [
+      {
+        "name": "luna_nights:lightsaberhit",
+        "stream": false
+      }
+    ]
+  },
+  "mandrake": {
+    "subtitle": "subtitles.mandrake",
+    "sounds": [
+      {
+        "name": "luna_nights:mandrake",
+        "stream": false
+      }
+    ]
+  },
+  "skill_get": {
+    "subtitle": "subtitles.skill_get",
+    "sounds": [
+      {
+        "name": "luna_nights:skill_get",
+        "stream": false
+      }
+    ]
+  },
+  "spray": {
+    "subtitle": "subtitles.spray",
+    "sounds": [
+      {
+        "name": "luna_nights:spray",
+        "stream": false
+      }
+    ]
+  },
+  "swing": {
+    "subtitle": "subtitles.swing",
+    "sounds": [
+      {
+        "name": "luna_nights:swing",
+        "stream": false
+      }
+    ]
+  },
+  "switch": {
+    "subtitle": "subtitles.switch",
+    "sounds": [
+      {
+        "name": "luna_nights:switch",
+        "stream": false
+      }
+    ]
   }
 }

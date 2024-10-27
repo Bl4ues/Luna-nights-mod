@@ -2699,30 +2699,6 @@
       "path": "~/Knifes"
     },
     {
-      "name": "TimeStopFunction",
-      "type": "procedure",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_stop_function",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lunanights/procedures/TimeStopFunctionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/PocketWatch/PocketAnimation"
-    },
-    {
       "name": "KnifePickUp",
       "type": "procedure",
       "sortid": 121,
@@ -2791,6 +2767,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2829,6 +2817,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2851,10 +2851,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -4858,6 +4854,354 @@
         ]
       },
       "path": "~/Enemies/Hitodama"
+    },
+    {
+      "name": "GemCountDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/GemCountDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "Tanuki",
+      "type": "animatedentity",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanuki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/entity/TanukiEntity.java",
+          "src/main/resources/data/luna_nights/forge/biome_modifier/tanuki_biome_modifier.json",
+          "src/main/java/net/mcreator/lunanights/client/renderer/TanukiRenderer.java",
+          "src/main/java/net/mcreator/lunanights/entity/model/TanukiModel.java",
+          "src/main/resources/assets/luna_nights/models/item/tanuki_spawn_egg.json"
+        ]
+      },
+      "path": "~/Enemies/Tanuki"
+    },
+    {
+      "name": "GemCountCreative",
+      "type": "overlay",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountCreativeOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountCrafting",
+      "type": "overlay",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_crafting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountCraftingOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountChest",
+      "type": "overlay",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_chest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountChestOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountTab",
+      "type": "overlay",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountTabOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_key_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/GemCountKeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountKey",
+      "type": "keybind",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/network/GemCountKeyMessage.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "IsGemCountTrue",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_gem_count_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/IsGemCountTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "GemCountKeyActivator",
+      "type": "overlay",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_count_key_activator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/client/screens/GemCountKeyActivatorOverlay.java"
+        ]
+      },
+      "path": "~/Gems"
+    },
+    {
+      "name": "RemoveBlocks",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_blocks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/RemoveBlocksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation/InvisiBlock"
+    },
+    {
+      "name": "TimeStopFunctionAdd",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_function_add",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TimeStopFunctionAddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketWatch/PocketAnimation"
+    },
+    {
+      "name": "TanukiAttack2",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanuki_attack_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TanukiAttack2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enemies/Tanuki"
+    },
+    {
+      "name": "TanukiAttack",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanuki_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TanukiAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enemies/Tanuki"
+    },
+    {
+      "name": "TanukiAttack3",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanuki_attack_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TanukiAttack3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enemies/Tanuki"
+    },
+    {
+      "name": "TanukiPlayerCollides",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanuki_player_collides",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lunanights/procedures/TanukiPlayerCollidesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Enemies/Tanuki"
     }
   ],
   "variable_elements": [
@@ -5652,6 +5996,30 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "GemCount",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "LandingLogic",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TanukiSwing",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "damageLogic",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5758,6 +6126,102 @@
       ],
       "category": "neutral",
       "subtitle": "Boss destroyed"
+    },
+    {
+      "name": "door",
+      "files": [
+        "door"
+      ],
+      "category": "block",
+      "subtitle": "Door Opening"
+    },
+    {
+      "name": "doublejump",
+      "files": [
+        "doublejump"
+      ],
+      "category": "player",
+      "subtitle": "Double Jump"
+    },
+    {
+      "name": "hit",
+      "files": [
+        "hit"
+      ],
+      "category": "hostile",
+      "subtitle": "Hit"
+    },
+    {
+      "name": "item_select",
+      "files": [
+        "item_select"
+      ],
+      "category": "neutral",
+      "subtitle": "Item Select"
+    },
+    {
+      "name": "landing",
+      "files": [
+        "landing"
+      ],
+      "category": "player",
+      "subtitle": "Landing"
+    },
+    {
+      "name": "lightsaber",
+      "files": [
+        "lightsaber"
+      ],
+      "category": "neutral",
+      "subtitle": "Lost Holy Sword Summoned"
+    },
+    {
+      "name": "lightsaberhit",
+      "files": [
+        "lightsaberhit"
+      ],
+      "category": "neutral",
+      "subtitle": "Lost Holy Sword Hit"
+    },
+    {
+      "name": "mandrake",
+      "files": [
+        "mandrake"
+      ],
+      "category": "hostile",
+      "subtitle": "Mandrake Screams"
+    },
+    {
+      "name": "skill_get",
+      "files": [
+        "skill_get"
+      ],
+      "category": "neutral",
+      "subtitle": "Skill Acquired"
+    },
+    {
+      "name": "spray",
+      "files": [
+        "spray"
+      ],
+      "category": "hostile",
+      "subtitle": "Fairy Sprays"
+    },
+    {
+      "name": "swing",
+      "files": [
+        "swing"
+      ],
+      "category": "hostile",
+      "subtitle": "Tanuki Swings"
+    },
+    {
+      "name": "switch",
+      "files": [
+        "switch"
+      ],
+      "category": "neutral",
+      "subtitle": "Switch"
     }
   ],
   "language_map": {
@@ -5776,11 +6240,10 @@
       "gui.luna_nights.warp_choice.label_7": "7",
       "item.luna_nights.sapphire": "Sapphire",
       "gui.luna_nights.warp_choice.label_6": "6",
-      "item.luna_nights.time_ticket": "Eternal Clock Upgrade",
       "gui.luna_nights_props.save.label_hp_recovery": "SAVE COMPLETE",
+      "item.luna_nights.time_ticket": "Eternal Clock Upgrade",
       "item.luna_nights.ruby": "Ruby",
       "block.luna_nights.wgd_2": "Warp Gate",
-      "death.attack.hitodama": "%1$s fell to the light of a Hitodama.",
       "block.luna_nights.wgd_3": "Warp Gate",
       "gui.luna_nights.warp_choice.button_button1": "Warp",
       "subtitles.soda_machine": "Vending machine",
@@ -5792,26 +6255,32 @@
       "gui.luna_nights.warp_choice.button_button3": "Warp",
       "subtitles.warp": "Warping",
       "item.luna_nights.mana_ticket": "MP Upgrade",
+      "death.attack.tanuki": "%1$s was knocked out by a Tanuki\u0027s sake bottle.",
       "item.luna_nights.maid_outfit_boots": "Maid Boots",
+      "subtitles.switch": "Switch",
       "subtitles.destroy_echo": "Boss destroyed",
+      "key.luna_nights.gem_count_key": "Gem Count",
       "gui.luna_nights.warp_choice.button_button71": "Button7",
       "item_group.luna_nights.touhou_luna_nights": "Touhou Luna Nights",
       "gui.luna_nights.warp_menu.WarpGateName": "Warp Gate Name",
       "item.luna_nights.shop_ticket": "Shop Ticket",
       "item.luna_nights_props.icon": "Icon",
+      "subtitles.skill_get": "Skill Acquired",
       "block.luna_nights.wgd_2_symbol": "Warp Gate",
       "key.luna_nights.double_jump": "Double Jump/Gliding",
       "item.luna_nights.topaz": "Topaz",
+      "key.categories.lunanights": "Touhou Luna Nights",
       "block.luna_nights.vending_machine_2": "Vending Machine",
       "subtitles.lvlupsound": "Level Up sound",
       "block.luna_nights.vending_machine_1": "Vending Machine",
       "subtitles.destroy": "Enemy destroyed",
       "block.luna_nights.wgc_3": "Warp Gate",
       "block.luna_nights.wgc_1": "Warp Gate",
-      "block.luna_nights.wgc_2": "Warp Gate",
       "block.luna_nights.vending_machine_3": "Vending Machine",
+      "block.luna_nights.wgc_2": "Warp Gate",
       "item.luna_nights.maid_outfit_helmet": "Maid Headwear",
       "item.luna_nights.emerald_tln": "Emerald",
+      "subtitles.hit": "Hit",
       "subtitles.tgmax": "TG Max sound",
       "item.luna_nights.knifes": "Knifes",
       "gui.luna_nights.warp_choice.Button1": "",
@@ -5825,12 +6294,18 @@
       "gui.luna_nights.warp_choice.Button5": "",
       "gui.luna_nights.warp_choice.Button6": "",
       "gui.luna_nights.warp_choice.Button7": "",
+      "subtitles.door": "Door Opening",
       "gui.luna_nights.warp_choice.button_button11": "Button1",
+      "subtitles.lightsaberhit": "Lost Holy Sword Hit",
+      "subtitles.swing": "Tanuki Swings",
       "subtitles.tel_save": "Telephone ringing",
       "item.luna_nights.maid_outfit_leggings": "Maid Garter Belt",
+      "subtitles.mandrake": "Mandrake Screams",
       "gui.luna_nights.warp_menu.label_warp_gate": "WARP GATE",
+      "subtitles.spray": "Fairy Sprays",
       "subtitles.throw_knife": "Knifes being thrown",
       "subtitles.knife_hit": "Knife Hit",
+      "subtitles.item_select": "Item Select",
       "block.luna_nights.wgb_2": "Warp Gate",
       "block.luna_nights.wgb_3": "Warp Gate",
       "gui.luna_nights.mana_overlay.label_time": "TG",
@@ -5843,13 +6318,16 @@
       "item.luna_nights.knifes_projectile_model": "Knifes Projectile",
       "item.luna_nights.icon": "Icon",
       "subtitles.gemdrop": "Gem Drop",
+      "subtitles.doublejump": "Double Jump",
       "item.luna_nights.aquamarine": "Aquamarine",
       "block.luna_nights_props.save_telephone": "Telephone Save",
+      "item.luna_nights.tanuki_spawn_egg": "Tanuki Spawn Egg",
       "gui.luna_nights.save.label_hp_recovery": "SAVE COMPLETE",
       "entity.luna_nights.hitodama": "Hitodama",
       "gui.luna_nights.warp_choice.button_button31": "Button3",
       "block.luna_nights_props.save_telephone_sign": "Telephone Save",
       "block.luna_nights.invisi_block_1": "Invisible Block",
+      "subtitles.landing": "Landing",
       "item.luna_nights.pocket_watch": "Pocket Watch",
       "item.luna_nights.link_remover": "Warp Gate Disconnector",
       "item.luna_nights.hitodama_spawn_egg": "Hitodama Spawn Egg",
@@ -5860,8 +6338,11 @@
       "item.luna_nights.maid_outfit_chestplate": "Maid Dress",
       "block.luna_nights.wga_1": "Warp Gate",
       "block.luna_nights.wga_2": "Warp Gate",
+      "entity.luna_nights.tanuki": "Tanuki",
       "gui.luna_nights.hp.label_hp_recovery": "MP HP RECOVERY",
+      "death.attack.tanuki.player": "%1$s was defeated by a Tanuki.",
       "subtitles.mpmax": "MP Max sound",
+      "subtitles.lightsaber": "Lost Holy Sword Summoned",
       "subtitles.timestop": "Time Stops",
       "gui.luna_nights.warp_choice.button_button51": "Button5",
       "block.luna_nights.invisi_block_2": "Invisible Block"
@@ -5955,7 +6436,15 @@
         "name": "Enemies",
         "children": [
           {
+            "name": "Bosses",
+            "children": []
+          },
+          {
             "name": "Hitodama",
+            "children": []
+          },
+          {
+            "name": "Tanuki",
             "children": []
           }
         ]

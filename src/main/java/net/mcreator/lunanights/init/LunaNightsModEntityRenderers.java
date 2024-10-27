@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.lunanights.client.renderer.TanukiRenderer;
 import net.mcreator.lunanights.client.renderer.KnifeFreezeRenderer;
 import net.mcreator.lunanights.client.renderer.HitodamaRenderer;
 
@@ -21,5 +22,6 @@ public class LunaNightsModEntityRenderers {
 		event.registerEntityRenderer(LunaNightsModEntities.KNIFE_FREEZE.get(), KnifeFreezeRenderer::new);
 		event.registerEntityRenderer(LunaNightsModEntities.KNIFES_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(LunaNightsModEntities.HITODAMA.get(), HitodamaRenderer::new);
+		event.registerEntityRenderer(LunaNightsModEntities.TANUKI.get(), TanukiRenderer::new);
 	}
 }

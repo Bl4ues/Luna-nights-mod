@@ -22,7 +22,7 @@ public class KnifesPickupProcedure {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:knife_hit")), SoundSource.BLOCKS, 1, 1, false);
 			}
 		}
-		if (Math.random() < (1) / ((float) 10)) {
+		if (Math.random() < (1) / ((float) 5)) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(LunaNightsModItems.KNIFES_PROJECTILE_MODEL.get()));
 				entityToSpawn.setPickUpDelay(0);

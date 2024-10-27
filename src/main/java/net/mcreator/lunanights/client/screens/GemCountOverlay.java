@@ -19,6 +19,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.lunanights.procedures.TopazCountProcedure;
 import net.mcreator.lunanights.procedures.SapphireCountProcedure;
 import net.mcreator.lunanights.procedures.RubyCountProcedure;
+import net.mcreator.lunanights.procedures.GemCountDisplayOverlayIngameProcedure;
 import net.mcreator.lunanights.procedures.EmeraldCountProcedure;
 import net.mcreator.lunanights.procedures.AquaCountProcedure;
 
@@ -49,7 +50,7 @@ public class GemCountOverlay {
 			RenderSystem.setShader(GameRenderer::getPositionTexShader);
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
-			if (true) {
+			if (GemCountDisplayOverlayIngameProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("luna_nights:textures/screens/gems.png"), 2, h - 229, 0, 0, 150, 100, 150, 100);
 
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,

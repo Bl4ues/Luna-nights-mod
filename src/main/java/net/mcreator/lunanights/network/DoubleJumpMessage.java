@@ -53,11 +53,11 @@ public class DoubleJumpMessage {
 			return;
 		if (type == 0) {
 
-			DoubleJumpOnKeyPressedProcedure.execute(world, entity);
+			DoubleJumpOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 		if (type == 1) {
 
-			DoubleJumpOnKeyReleasedProcedure.execute(world, entity);
+			DoubleJumpOnKeyReleasedProcedure.execute(entity);
 		}
 	}
 

@@ -102,6 +102,9 @@
     ],
     "baseTexture": "",
     "overlayTarget": "Inventory",
+    "displayCondition": {
+      "name": "GemCountDisplayOverlayIngame"
+    },
     "gridSettings": {
       "sx": 10,
       "sy": 10,

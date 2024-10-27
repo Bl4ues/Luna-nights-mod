@@ -165,6 +165,10 @@ public class LunaNightsModVariables {
 			clone.SaphBuff = original.SaphBuff;
 			clone.EmeBuff = original.EmeBuff;
 			clone.KnifeStop = original.KnifeStop;
+			clone.GemCount = original.GemCount;
+			clone.LandingLogic = original.LandingLogic;
+			clone.TanukiSwing = original.TanukiSwing;
+			clone.damageLogic = original.damageLogic;
 			if (!event.isWasDeath()) {
 				clone.WalkOnWater = original.WalkOnWater;
 				clone.JumpVar = original.JumpVar;
@@ -542,6 +546,10 @@ public class LunaNightsModVariables {
 		public double SaphBuff = 0;
 		public double EmeBuff = 0;
 		public boolean KnifeStop = false;
+		public boolean GemCount = false;
+		public boolean LandingLogic = false;
+		public boolean TanukiSwing = false;
+		public boolean damageLogic = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -644,6 +652,10 @@ public class LunaNightsModVariables {
 			nbt.putDouble("SaphBuff", SaphBuff);
 			nbt.putDouble("EmeBuff", EmeBuff);
 			nbt.putBoolean("KnifeStop", KnifeStop);
+			nbt.putBoolean("GemCount", GemCount);
+			nbt.putBoolean("LandingLogic", LandingLogic);
+			nbt.putBoolean("TanukiSwing", TanukiSwing);
+			nbt.putBoolean("damageLogic", damageLogic);
 			return nbt;
 		}
 
@@ -743,6 +755,10 @@ public class LunaNightsModVariables {
 			SaphBuff = nbt.getDouble("SaphBuff");
 			EmeBuff = nbt.getDouble("EmeBuff");
 			KnifeStop = nbt.getBoolean("KnifeStop");
+			GemCount = nbt.getBoolean("GemCount");
+			LandingLogic = nbt.getBoolean("LandingLogic");
+			TanukiSwing = nbt.getBoolean("TanukiSwing");
+			damageLogic = nbt.getBoolean("damageLogic");
 		}
 	}
 
@@ -861,6 +877,10 @@ public class LunaNightsModVariables {
 					variables.SaphBuff = message.data.SaphBuff;
 					variables.EmeBuff = message.data.EmeBuff;
 					variables.KnifeStop = message.data.KnifeStop;
+					variables.GemCount = message.data.GemCount;
+					variables.LandingLogic = message.data.LandingLogic;
+					variables.TanukiSwing = message.data.TanukiSwing;
+					variables.damageLogic = message.data.damageLogic;
 				}
 			});
 			context.setPacketHandled(true);

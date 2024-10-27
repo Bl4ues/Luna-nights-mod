@@ -69,6 +69,7 @@ public class LunaNightsModItems {
 	public static final RegistryObject<Item> WGD_2_SYMBOL = block(LunaNightsModBlocks.WGD_2_SYMBOL);
 	public static final RegistryObject<Item> KNIFES_PROJECTILE_MODEL = REGISTRY.register("knifes_projectile_model", () -> new KnifesProjectileModelItem());
 	public static final RegistryObject<Item> HITODAMA_SPAWN_EGG = REGISTRY.register("hitodama_spawn_egg", () -> new ForgeSpawnEggItem(LunaNightsModEntities.HITODAMA, -13408513, -3342337, new Item.Properties()));
+	public static final RegistryObject<Item> TANUKI_SPAWN_EGG = REGISTRY.register("tanuki_spawn_egg", () -> new ForgeSpawnEggItem(LunaNightsModEntities.TANUKI, -12245232, -8037841, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

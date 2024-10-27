@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.lunanights.entity.TanukiEntity;
 import net.mcreator.lunanights.entity.KnifesProjectileEntity;
 import net.mcreator.lunanights.entity.KnifeFreezeEntity;
 import net.mcreator.lunanights.entity.HitodamaEntity;
@@ -27,13 +28,17 @@ public class LunaNightsModEntities {
 	public static final RegistryObject<EntityType<KnifeFreezeEntity>> KNIFE_FREEZE = register("knife_freeze",
 			EntityType.Builder.<KnifeFreezeEntity>of(KnifeFreezeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KnifeFreezeEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.2f, 0.2f));
 	public static final RegistryObject<EntityType<KnifesProjectileEntity>> KNIFES_PROJECTILE = register("projectile_knifes_projectile", EntityType.Builder.<KnifesProjectileEntity>of(KnifesProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(KnifesProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<HitodamaEntity>> HITODAMA = register("hitodama",
-			EntityType.Builder.<HitodamaEntity>of(HitodamaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(HitodamaEntity::new)
+			EntityType.Builder.<HitodamaEntity>of(HitodamaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(30).setUpdateInterval(3).setCustomClientFactory(HitodamaEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<TanukiEntity>> TANUKI = register("tanuki",
+			EntityType.Builder.<TanukiEntity>of(TanukiEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(TanukiEntity::new)
+
+					.sized(1.2f, 2.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -44,6 +49,7 @@ public class LunaNightsModEntities {
 		event.enqueueWork(() -> {
 			KnifeFreezeEntity.init();
 			HitodamaEntity.init();
+			TanukiEntity.init();
 		});
 	}
 
@@ -51,5 +57,6 @@ public class LunaNightsModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(KNIFE_FREEZE.get(), KnifeFreezeEntity.createAttributes().build());
 		event.put(HITODAMA.get(), HitodamaEntity.createAttributes().build());
+		event.put(TANUKI.get(), TanukiEntity.createAttributes().build());
 	}
 }

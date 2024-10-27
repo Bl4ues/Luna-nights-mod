@@ -37,7 +37,7 @@ public class EnemyDiesProcedure {
 		}
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 20, 1.5, 1.5, 1.5, 0.5);
-		if (Math.random() < (3) / ((float) 5)) {
+		if (Math.random() < (1) / ((float) 5)) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("luna_nights:gemdrop")), SoundSource.NEUTRAL, 1, 1);
@@ -51,7 +51,7 @@ public class EnemyDiesProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
-		if (Math.random() < (3) / ((float) 5)) {
+		if (Math.random() < (1) / ((float) 5)) {
 			LunaNightsMod.queueServerWork(2, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -67,7 +67,7 @@ public class EnemyDiesProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
-		if (Math.random() < (3) / ((float) 5)) {
+		if (Math.random() < (2) / ((float) 5)) {
 			LunaNightsMod.queueServerWork(4, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -99,7 +99,7 @@ public class EnemyDiesProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
-		if (Math.random() < (3) / ((float) 5)) {
+		if (Math.random() < (2) / ((float) 5)) {
 			LunaNightsMod.queueServerWork(8, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

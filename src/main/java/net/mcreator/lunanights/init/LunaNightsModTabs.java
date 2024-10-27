@@ -37,6 +37,7 @@ public class LunaNightsModTabs {
 				tabData.accept(LunaNightsModItems.SAPPHIRE.get());
 				tabData.accept(LunaNightsModItems.EMERALD_TLN.get());
 				tabData.accept(LunaNightsModItems.HITODAMA_SPAWN_EGG.get());
+				tabData.accept(LunaNightsModItems.TANUKI_SPAWN_EGG.get());
 			})
 
 					.build());

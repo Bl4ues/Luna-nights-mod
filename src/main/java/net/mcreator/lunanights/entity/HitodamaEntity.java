@@ -25,6 +25,7 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -38,7 +39,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -135,14 +135,14 @@ public class HitodamaEntity extends Monster implements GeoEntity {
 					HitodamaEntity.this.doHurtTarget(livingentity);
 				} else {
 					double d0 = HitodamaEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
+					if (d0 < 30) {
 						Vec3 vec3d = livingentity.getEyePosition(1);
 						HitodamaEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
 					}
 				}
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.5, 20) {
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.6, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = HitodamaEntity.this.getRandom();
@@ -160,6 +160,7 @@ public class HitodamaEntity extends Monster implements GeoEntity {
 		});
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, (float) 16));
 	}
 
 	@Override
@@ -230,8 +231,7 @@ public class HitodamaEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(LunaNightsModEntities.HITODAMA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(LunaNightsModEntities.HITODAMA.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -240,7 +240,7 @@ public class HitodamaEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 30);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.6);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;

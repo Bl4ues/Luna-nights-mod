@@ -43,7 +43,7 @@ public abstract class MaidOutfitItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{1, 2, 4, 1}[type.getSlot().getIndex()];
+				return new int[]{1, 4, 6, 3}[type.getSlot().getIndex()];
 			}
 
 			@Override

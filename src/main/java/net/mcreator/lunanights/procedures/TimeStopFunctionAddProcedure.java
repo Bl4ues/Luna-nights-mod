@@ -19,7 +19,7 @@ import net.mcreator.lunanights.init.LunaNightsModItems;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class TimeStopFunctionProcedure {
+public class TimeStopFunctionAddProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		execute(event, event.getEntity().level(), event.getEntity());
@@ -41,7 +41,9 @@ public class TimeStopFunctionProcedure {
 				entity.setDeltaMovement(new Vec3(0, 0, 0));
 			}
 		} else {
-			entity.setNoGravity(false);
+			if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LunaNightsModItems.POCKET_WATCH.get())) : false) == false) {
+				entity.setNoGravity(false);
+			}
 		}
 	}
 }
